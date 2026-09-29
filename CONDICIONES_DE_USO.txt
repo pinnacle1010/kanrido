@@ -1,0 +1,170 @@
+CONDICIONES DE USO DE KanriDO
+
+Última actualización: 29 de septiembre de 2026
+
+La instalación de KanriDO implica la aceptación de estas condiciones. Quien no
+las acepte no debe continuar con la instalación.
+
+La versión vigente de este texto está publicada en
+https://github.com/pinnacle1010/kanrido
+
+
+1. TITULAR
+
+KanriDO es una aplicación desarrollada y publicada por César Calabuig Llamas
+(en adelante, el titular). Contacto: kanrido.contact@gmail.com.
+
+
+2. OBJETO Y CARACTERÍSTICAS DE LA APLICACIÓN
+
+KanriDO es una aplicación de escritorio que se instala y se ejecuta en el equipo
+del usuario. Importa los archivos que el usuario le proporciona y calcula y
+presenta indicadores de negocio de forma local.
+
+- Es gratuita: no existen planes, suscripciones, pagos ni periodos de prueba, y
+  todos los usuarios reciben la misma versión.
+- No requiere registro ni cuenta de usuario, y no incorpora ningún mecanismo que
+  verifique o limite su uso.
+- No envía datos de negocio, telemetría ni informes automáticos de error. La
+  única conexión que establece es la comprobación de versiones nuevas descrita
+  en el apartado 5.
+
+La función de la aplicación se limita a presentar los datos que introduce el
+usuario. KanriDO no aporta información propia, no verifica los datos importados
+ni corrige los errores de los archivos de origen: los lee, los agrupa y los
+presenta. Si un dato de partida es incorrecto, incompleto o está mal
+clasificado, el resultado mostrado lo será igualmente. La aplicación no es una
+herramienta de verificación, auditoría ni control, y sus resultados no acreditan
+ningún hecho frente a terceros.
+
+
+3. LICENCIA DE USO
+
+El titular concede al usuario una licencia de uso gratuita, no exclusiva,
+intransferible y revocable para instalar y utilizar KanriDO conforme a estas
+condiciones.
+
+La licencia autoriza a:
+
+- Instalar y utilizar la aplicación para los fines propios del usuario, ya sean
+  personales o los de la empresa o el despacho que la descarga.
+- Instalarla en los equipos que el usuario necesite para esa misma actividad.
+- Realizar copias de seguridad de sus datos y de la aplicación instalada.
+
+La licencia no autoriza a:
+
+- Redistribuir la aplicación, esto es, publicarla, alojarla o entregarla a
+  terceros, con o sin ánimo de lucro. La aplicación se obtiene únicamente en el
+  sitio oficial, donde se publican las versiones verificables.
+- Copiar o reproducir la aplicación más allá del uso y la instalación descritos.
+- Venderla, alquilarla, cederla o sublicenciarla.
+- Realizar ingeniería inversa, descompilarla o desensamblarla, salvo en la
+  medida en que la ley lo permita expresamente.
+- Retirar o alterar los avisos de autoría, marca o licencia.
+- Utilizarla de forma contraria a la ley.
+
+
+4. DATOS DEL USUARIO Y SUS RESPONSABILIDADES
+
+Los datos de negocio del usuario se almacenan cifrados en su equipo y no se
+envían a ningún servidor. Dada la naturaleza local de la aplicación, corresponde
+al usuario:
+
+- Mantener la seguridad de su equipo.
+- Custodiar su contraseña local. Si se pierden a la vez la contraseña local y el
+  equipo en el que está instalada la aplicación, o su usuario de Windows, los
+  datos cifrados y sus copias de seguridad no pueden recuperarse, y el titular
+  tampoco puede descifrarlos.
+- Conservar las copias de seguridad. La aplicación las realiza de forma
+  automática en la carpeta que el usuario elija, y la custodia de esa carpeta le
+  corresponde.
+- Comprobar los resultados antes de adoptar decisiones basadas en ellos.
+
+
+5. ACTUALIZACIONES
+
+Las versiones nuevas se publican en el sitio oficial. Al iniciarse, la
+aplicación consulta dicho sitio para comprobar si existe una versión más
+reciente. Esta consulta no incluye ningún dato de negocio del usuario; el
+servicio que la recibe (GitHub) registra la dirección IP desde la que se
+realiza, como en cualquier acceso a un sitio web.
+
+Si existe una versión nueva, la aplicación lo notifica y solo la descarga e
+instala cuando el usuario lo solicita. Antes de instalarla verifica que está
+firmada por el titular y, si la firma no es válida, no la instala. Sin conexión
+a internet, la consulta no se realiza y la aplicación funciona con normalidad.
+
+
+6. GARANTÍAS Y RESPONSABILIDAD
+
+La aplicación se proporciona en el estado en que se encuentra y según su
+disponibilidad, sin garantías de ningún tipo, expresas o implícitas. En
+particular, no se garantiza su funcionamiento ininterrumpido o libre de
+errores, la exactitud de sus resultados, su idoneidad para un fin determinado,
+su compatibilidad con cualquier equipo o programa, ni su publicación o
+mantenimiento futuros. El usuario la instala y la utiliza bajo su exclusiva
+responsabilidad.
+
+En la máxima medida permitida por la ley, el titular no será responsable de
+ningún daño derivado del uso de la aplicación. Esta exclusión comprende, sin
+carácter limitativo: la pérdida o corrupción de datos, incluidas la base
+cifrada y las copias de seguridad; los daños económicos de cualquier
+naturaleza; las decisiones que el usuario o terceros adopten a partir de lo que
+la aplicación muestre, y sus consecuencias dentro o fuera de ella, sean de
+carácter empresarial, económico, laboral, contractual, contable o fiscal, y
+tanto para el usuario como para terceros; los fallos del equipo, del sistema
+operativo, de la red o de los programas de terceros con los que la aplicación
+coexista; y la interrupción del servicio, la ausencia de actualizaciones o
+cualquier incidente de seguridad.
+
+Los indicadores son una ayuda para analizar los datos propios. No constituyen
+asesoramiento financiero, contable, fiscal ni jurídico, ni sustituyen la
+revisión de un profesional. Corresponde exclusivamente al usuario comprobar los
+resultados antes de adoptar cualquier decisión.
+
+El usuario es el único responsable de sus datos, de su contraseña local y de la
+conservación de sus copias de seguridad.
+
+Nada de lo anterior excluye ni limita la responsabilidad por dolo o negligencia
+grave, por daños personales ni ninguna otra que la ley no permita excluir, en
+especial los derechos que la normativa de protección de los consumidores
+reconoce a estos.
+
+
+7. SUSPENSIÓN Y CESE
+
+El usuario puede dejar de utilizar la aplicación y desinstalarla en cualquier
+momento; sus datos permanecen en su equipo y puede eliminarlos cuando lo estime
+oportuno.
+
+El titular puede dejar de publicar o de mantener la aplicación en cualquier
+momento. Ello no afecta a las instalaciones existentes: su uso no depende de
+ninguna comprobación en línea, por lo que una copia instalada sigue funcionando
+sin depender de ningún servicio externo.
+
+
+8. PROPIEDAD INTELECTUAL
+
+La aplicación, su código y sus signos distintivos pertenecen al titular. Los
+datos del usuario son de su exclusiva titularidad, y estas condiciones no
+otorgan al titular ningún derecho sobre ellos.
+
+La aplicación incorpora componentes de código abierto de terceros, entre ellos
+SQLCipher y OpenSSL, cuyas atribuciones figuran en la pantalla «Acerca de» en
+cumplimiento de sus licencias.
+
+
+9. MODIFICACIÓN DE ESTAS CONDICIONES
+
+El titular puede modificar estas condiciones. La versión vigente se publica en
+https://github.com/pinnacle1010/kanrido, con indicación de la fecha de su
+última actualización. Las modificaciones se aplican a las descargas e
+instalaciones posteriores a su publicación.
+
+
+10. LEGISLACIÓN APLICABLE
+
+Estas condiciones, así como cualquier controversia o acción legal derivada del
+uso de la aplicación, se rigen por la legislación española. Cuando el usuario
+tenga la condición de consumidor, serán competentes los juzgados y tribunales
+que determine la normativa imperativa aplicable.
