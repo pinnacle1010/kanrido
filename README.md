@@ -42,6 +42,12 @@ juntarlos y ver cómo va cada proyecto.
 Mientras tanto, una hoja de Google se descarga como Excel o CSV y se importa igual que cualquier otro
 archivo.
 
+## Cómo se usa
+
+El [manual](MANUAL.md) explica, con capturas, cómo traer tus datos, cómo leer las cifras, cómo
+organizar tus dashboards e indicadores y cómo trabajar con tus proyectos. También está en
+[PDF](MANUAL.pdf), para descargarlo o imprimirlo.
+
 ## Tus datos
 
 KanriDO no envía datos de negocio, ni telemetría, ni informes automáticos de error. Todo lo que
