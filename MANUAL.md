@@ -1,24 +1,127 @@
 # Manual de KanriDO
 
-Este manual explica cómo traer tus datos a KanriDO, cómo leer las cifras que calcula, cómo organizar
-tus dashboards e indicadores y cómo trabajar con tus proyectos.
-
-La instalación y el primer arranque no están aquí: el asistente que se abre la primera vez te guía
-paso a paso. Este manual empieza cuando ya estás delante del dashboard.
+Este manual explica cómo instalar KanriDO y dejarlo listo, cómo traer tus datos, cómo leer las
+cifras que calcula, cómo organizar tus dashboards e indicadores y cómo trabajar con tus proyectos.
 
 Las capturas son de una empresa inventada, un estudio de arquitectura e ingeniería con diez
 proyectos. Ningún dato es real.
 
 **Contenido**
 
-1. [Traer los datos](#1-traer-los-datos)
-2. [Leer las cifras](#2-leer-las-cifras)
-3. [Dashboards, datasets e indicadores](#3-dashboards-datasets-e-indicadores)
-4. [Proyectos](#4-proyectos)
+1. [Primeros pasos](#1-primeros-pasos)
+2. [Traer los datos](#2-traer-los-datos)
+3. [Leer las cifras](#3-leer-las-cifras)
+4. [Dashboards, datasets e indicadores](#4-dashboards-datasets-e-indicadores)
+5. [Proyectos](#5-proyectos)
 
 ---
 
-## 1. Traer los datos
+## 1. Primeros pasos
+
+### 1.1 Instalar
+
+KanriDO funciona en Windows 10 y Windows 11 de 64 bits. No hace falta darse de alta en nada: tus
+datos se quedan cifrados en tu equipo.
+
+1. Descarga el instalador de la
+   [página de publicaciones](https://github.com/pinnacle1010/kanrido/releases/latest).
+2. Ábrelo. Windows mostrará un aviso porque el programa es reciente:
+   [El aviso de Windows](https://github.com/pinnacle1010/kanrido/blob/main/EL_AVISO_DE_WINDOWS.pdf)
+   explica cómo continuar y cómo comprobar que el archivo es el que se publicó.
+3. Acepta las condiciones de uso y sigue los pasos del instalador.
+
+### 1.2 El asistente del primer arranque
+
+La primera vez que abres KanriDO, un asistente de tres pasos lo deja listo. Si lo cierras a medias,
+al volver a abrirlo sigue en el mismo paso.
+
+**Paso 1: la contraseña local.** Escribe una contraseña de al menos 8 caracteres y repítela. Esta
+contraseña cifra tus datos y también sus copias de seguridad.
+
+![El primer paso del asistente: la contraseña local](manual/inicio-contrasena.png)
+
+- La casilla **No volver a pedir la contraseña en este equipo** viene marcada: así KanriDO se abre
+  sin pedirla en este equipo. Si la desmarcas, te la pedirá cada vez que lo abras.
+- **Tus datos solo se pierden si pierdes a la vez esta contraseña y este equipo con su usuario de
+  Windows**, y en ese caso las copias de seguridad se pierden con ellos. Guarda la contraseña en un
+  sitio seguro.
+- Si vienes de otro equipo y traes tu carpeta de copias de seguridad, pulsa **Recuperar los datos
+  desde una copia de seguridad** para seguir con tus datos en lugar de empezar de cero.
+
+**Paso 2: las áreas.** Marca las áreas de la empresa que quieres seguir: Contabilidad, Comercial,
+Proyectos, Operaciones o Dirección. Puedes marcar varias. Cada área será una sección de tu primer
+dashboard, «Principal», con sus indicadores.
+
+![El segundo paso: las áreas de la empresa](manual/inicio-areas.png)
+
+**Paso 3: los primeros datos.** KanriDO te dice en qué archivos suelen estar los datos de las áreas
+que has elegido. Con uno basta para ver las primeras cifras.
+
+![El tercer paso: los primeros datos](manual/inicio-datos.png)
+
+- Si lo tienes a mano, impórtalo ahí mismo: eliges el archivo, compruebas qué columna es cada dato y
+  pulsas **Importar**, como se explica en [Subir un archivo](#21-subir-un-archivo). Después pulsa
+  **Crear el dashboard**.
+- Si prefieres empezar sin datos, pulsa **Seguir sin datos**. Verás cómo quedará el dashboard, con
+  cifras de ejemplo que no se guardan, y con **Ir al dashboard** entras en la aplicación.
+
+![La vista de ejemplo para quien empieza sin datos](manual/inicio-muestra.png)
+
+KanriDO prepara «Principal» con los indicadores de esas áreas que tus datos ya pueden calcular. Si
+todavía no hay datos, pone unos cuantos de cada área para empezar. Todo se puede cambiar después.
+
+**El recorrido.** Al llegar al dashboard, un recorrido corto te enseña dónde está cada cosa: las
+secciones, el botón **Editar**, el **+** para crear otro dashboard, la lista de indicadores y el
+catálogo. Si no lo necesitas, pulsa **Saltar el recorrido**.
+
+![El recorrido por el dashboard](manual/inicio-recorrido.png)
+
+### 1.3 Orientarse en la aplicación
+
+La barra lateral de la izquierda es la misma en todas las pantallas:
+
+- **Volver** te lleva un paso atrás, a la pantalla en la que estabas.
+- **Dashboard**: tus cifras. Es la pantalla del día a día.
+- **Datos**: lo que entra y cómo se organiza. Ahí están importar, el historial de datos, los
+  indicadores, las columnas, los proyectos y las copias de seguridad.
+- **Configuración**: los ajustes, que normalmente se tocan una sola vez.
+- Al pie están el selector de **Periodo** (ver [El periodo y «Todo»](#33-el-periodo-y-todo)), la
+  bandeja de **pendientes** —el reloj con un número, que reúne lo que espera una decisión tuya— y el
+  botón para cambiar entre el tema claro y el oscuro.
+
+### 1.4 Elegir dónde se guardan las copias de seguridad
+
+KanriDO hace una copia de seguridad cada día y conserva las de las últimas semanas. Hasta que eliges
+una carpeta, las copias se guardan en el mismo equipo, así que si el equipo falla se pierden con él.
+Por eso la bandeja de pendientes, el reloj del pie de la barra, te lo recuerda desde el primer día.
+
+![La bandeja de pendientes, con el recordatorio de la carpeta de copias](manual/inicio-pendientes.png)
+
+1. Entra en **Datos › Copias de seguridad**.
+2. Pulsa **Elegir carpeta…** y elige una carpeta en otro disco, o una carpeta que ya sincronice tu
+   nube (OneDrive, Dropbox, Google Drive).
+
+Junto a las copias se guarda la clave que las abre, protegida con tu contraseña local. Con esa
+carpeta entera y la contraseña puedes recuperar tus datos en cualquier otro equipo, desde el primer
+paso del asistente.
+
+En la misma pantalla, **Copia ahora** hace una copia en el momento, y **Restaurar** vuelve a una copia
+anterior al reiniciar la aplicación. Los datos que tenías hasta entonces se guardan aparte.
+
+### 1.5 Las actualizaciones
+
+Al abrirse, KanriDO comprueba si hay una versión nueva. Si la hay, aparece el aviso **Actualización
+disponible**, con la versión nueva y la que tienes instalada:
+
+- **Instalar** la descarga y la instala. La aplicación se cierra para terminar de instalar.
+- **Aplazar** quita el aviso hasta la próxima vez que abras KanriDO.
+
+Nada se descarga ni se instala sin que lo pidas, y antes de instalarla se comprueba que la
+actualización la ha publicado KanriDO. Tus datos se conservan al actualizar.
+
+---
+
+## 2. Traer los datos
 
 Todo lo que entra en KanriDO pasa por **Datos › Importar**. Hay cuatro formas de aportar los datos:
 
@@ -32,7 +135,7 @@ Se leen libros de Excel (`.xlsx`, `.xlsm`, `.xlsb`, `.xls`) y archivos de texto 
 `.tsv`, `.txt`). No hace falta preparar nada: los números con punto de miles y coma decimal
 («1.234,56») y las fechas como «25/12/2025» se entienden tal y como los escribes.
 
-### 1.1 Subir un archivo
+### 2.1 Subir un archivo
 
 1. Entra en **Datos › Importar** y pulsa **Subir Excel/CSV**.
 2. Elige el archivo, o arrástralo a la zona de subida.
@@ -72,7 +175,7 @@ aclara si el día va delante, KanriDO te pregunta el orden antes de importar. Co
 facturas, por ejemplo), KanriDO te pregunta de cuál de tus archivos es versión nueva. Si le dices
 cuál, la versión nueva sustituye a la anterior y no se suman las dos.
 
-### 1.2 El resultado de la importación
+### 2.2 El resultado de la importación
 
 Al terminar, KanriDO te dice cuántas filas han entrado y a qué periodos van, y te avisa de lo que
 conviene revisar:
@@ -86,9 +189,9 @@ conviene revisar:
 ![El resultado de importar la hoja de seguimiento de proyectos](manual/importar-resultado.png)
 
 Si importas tu hoja de seguimiento de proyectos, puede que además te pida traducir las palabras que
-usas para el estado de tus proyectos. Está explicado en [Proyectos](#42-los-estados-del-seguimiento).
+usas para el estado de tus proyectos. Está explicado en [Proyectos](#52-los-estados-del-seguimiento).
 
-### 1.3 La carpeta vigilada
+### 2.3 La carpeta vigilada
 
 Si tus datos llegan cada mes en archivos nuevos —partes de horas, exportaciones de tu programa de
 facturación—, puedes pedirle a KanriDO que vigile la carpeta donde los guardas. Lo que aparezca ahí
@@ -128,13 +231,13 @@ Algunas cosas que conviene saber:
 - **Todo lo que hay dentro se importa**, también las copias y las versiones antiguas que guardes en
   alguna subcarpeta. Para dejar un archivo fuera, sácalo de la carpeta o pulsa **Ignorar** en su fila.
 - **Un archivo que ya entró y cambia** (porque lo has actualizado) se vuelve a leer y sustituye a su
-  versión anterior. Si la versión nueva no trae casi nada de la anterior —como pasa con una
+  versión anterior. Si la versión nueva no trae todas las filas de la anterior —como pasa con una
   exportación de un solo mes—, no sustituye nada sin preguntarte: la pregunta te espera en la bandeja
   de pendientes.
 - Los archivos temporales de Excel y los del sistema no se leen. Los que no son de un tipo que
   KanriDO sepa leer se nombran aparte, sin contar como pendientes.
 
-### 1.4 El historial de datos
+### 2.4 El historial de datos
 
 En **Datos › Historial de datos** queda todo lo que les ha pasado a tus datos: cada importación y
 cada borrado, con su fecha, de dónde vino y cuántas filas movió.
@@ -154,9 +257,9 @@ Desde aquí puedes:
 
 ---
 
-## 2. Leer las cifras
+## 3. Leer las cifras
 
-### 2.1 El dashboard
+### 3.1 El dashboard
 
 El **Dashboard** es la pantalla principal. Cada sección es un dataset —un grupo de indicadores, como
 Contabilidad u Operaciones— y cada tarjeta es un indicador. Las secciones se pliegan con la flecha de
@@ -177,7 +280,7 @@ Cada tarjeta te dice:
 
 Pulsa una tarjeta para abrir su detalle.
 
-### 2.2 Los cuatro estados de una cifra
+### 3.2 Los cuatro estados de una cifra
 
 Una cifra está siempre en uno de estos cuatro estados, y se dice igual en la tarjeta, en el gráfico
 y en el detalle:
@@ -198,7 +301,7 @@ En el dashboard de un proyecto verás además **Sin reparto por proyecto** en al
 No es un fallo del periodo: es que ese indicador no se puede repartir por proyecto, por ejemplo
 porque sus datos no dicen de qué proyecto es cada fila. La tarjeta te dice el motivo.
 
-### 2.3 El periodo y «Todo»
+### 3.3 El periodo y «Todo»
 
 El selector **Periodo**, al pie de la barra lateral, decide qué periodo miran todos los dashboards:
 
@@ -216,7 +319,7 @@ Dos ajustes de **Configuración › Calendario** cambian este comportamiento:
 
 ![Los ajustes del ejercicio fiscal y del periodo al abrir](manual/configuracion-calendario.png)
 
-### 2.4 Las formas de ver un indicador
+### 3.4 Las formas de ver un indicador
 
 Cada indicador se puede ver de cinco formas:
 
@@ -229,7 +332,7 @@ Cada indicador se puede ver de cinco formas:
 ![Una pestaña con línea, KPI, lista, tarta y barras](manual/dashboard-formas.png)
 
 La forma se elige en **Visualización**, al editar el indicador (ver
-[Crear o cambiar un indicador](#34-crear-o-cambiar-un-indicador)). Con **Automático**, KanriDO elige
+[Crear o cambiar un indicador](#44-crear-o-cambiar-un-indicador)). Con **Automático**, KanriDO elige
 por ti: el reparto si el indicador reparte por grupos, la línea si tiene varios periodos y la cifra
 sola en los demás casos.
 
@@ -248,13 +351,14 @@ y debajo del desplegable se dice qué cambiar para tener las demás:
 Si un periodo concreto no tiene nada que repartir, la tarjeta enseña la cifra sola ese periodo, sin
 avisar: el estado de la cifra ya dice lo que pasa.
 
-### 2.5 El detalle de un indicador
+### 3.5 El detalle de un indicador
 
 Al pulsar una tarjeta se abre su detalle, con:
 
 - **La cifra** del periodo y su variación.
 - **El gráfico de evolución**, con toda la serie del periodo elegido. El tramo **En curso** se dibuja
-  con línea discontinua. El gráfico aparece cuando hay datos de dos periodos o más.
+  con línea discontinua. Un periodo sin datos se ve como un hueco en la línea, nunca como un cero.
+  El gráfico aparece cuando hay datos de dos periodos o más.
 - **Cómo se calcula**: la definición del indicador en una frase, de dónde saca los datos, su
   periodicidad y su comparativa.
 
@@ -283,7 +387,7 @@ detalle tiene una tabla para escribir el valor de cada periodo, o para **pegar**
 
 ---
 
-## 3. Dashboards, datasets e indicadores
+## 4. Dashboards, datasets e indicadores
 
 Tres ideas para orientarse:
 
@@ -296,7 +400,11 @@ Tres ideas para orientarse:
 Reorganizar dashboards o datasets **nunca cambia una cifra**, y quitar un indicador de un dashboard no
 lo borra: se sigue calculando y sigue en los demás dashboards que lo lleven.
 
-### 3.1 Varios dashboards en pestañas
+Si un dashboard enseña un indicador sin el dataset en el que va, la tarjeta aparece al final, en
+**Otros indicadores**. Su cifra es igual de correcta. Para colocarla en una sección, asígnale un
+dataset en **Datos › Indicadores** o añade su dataset al dashboard al editarlo.
+
+### 4.1 Varios dashboards en pestañas
 
 Las pestañas están encima del dashboard. La que tengas abierta se recuerda para la próxima vez.
 
@@ -317,22 +425,22 @@ En modo edición puedes:
 
 ![La edición de un dashboard: nombre, color, origen de las cifras e indicadores](manual/dashboard-editar.png)
 
-### 3.2 El dashboard de un proyecto
+### 4.2 El dashboard de un proyecto
 
 Un dashboard puede enseñar las cifras de un solo proyecto en lugar de las de toda la empresa, con
-los mismos indicadores. En modo edición, en **Origen de las cifras**, elige el proyecto en el
-desplegable **Proyecto**.
+los mismos indicadores. En modo edición, en **Origen de las cifras**, pulsa **Proyecto** y busca el
+proyecto por su nombre o su código.
 
 ![Un dashboard con las cifras de un solo proyecto](manual/dashboard-proyecto.png)
 
 Debajo del nombre, la pestaña dice siempre de qué proyecto son sus cifras. Las cifras de un proyecto
 se calculan aparte, así que la primera vez tardan unos segundos en aparecer. Para volver a las cifras
-de toda la empresa, elige **Toda la empresa** en el mismo desplegable.
+de toda la empresa, elige **Toda la empresa** en esa misma lista.
 
 Si solo quieres echar un vistazo a un proyecto, no hace falta crear un dashboard: ábrelo desde su
-lista (ver [La pantalla de un proyecto](#45-la-pantalla-de-un-proyecto)).
+lista (ver [La pantalla de un proyecto](#56-la-pantalla-de-un-proyecto)).
 
-### 3.3 La lista de indicadores
+### 4.3 La lista de indicadores
 
 En **Datos › Indicadores** está todo lo que KanriDO sabe medir en tu instalación.
 
@@ -347,7 +455,7 @@ En **Datos › Indicadores** está todo lo que KanriDO sabe medir en tu instalac
 - En **Datasets**, arriba, se crean, renombran, ordenan y borran los datasets. Un dataset nuevo nace
   vacío: para añadirle un indicador, edita ese indicador y marca el dataset.
 
-### 3.4 Crear o cambiar un indicador
+### 4.4 Crear o cambiar un indicador
 
 Pulsa **+ Nuevo indicador**, o **Editar** en uno que ya exista. El formulario se recorre de arriba
 abajo, y a la derecha tienes la **Previsualización** de la cifra y **Cómo se calcula** en una frase,
@@ -359,7 +467,7 @@ que se actualizan mientras rellenas.
   la columna que suma.
 - **Periodicidad**: **Mensual**, **Trimestral**, **Anual** o **Estado actual** (una cifra del
   momento, sin evolución).
-- **Visualización**: la forma de la tarjeta (ver [2.4](#24-las-formas-de-ver-un-indicador)).
+- **Visualización**: la forma de la tarjeta (ver [3.4](#34-las-formas-de-ver-un-indicador)).
 - **Mostrar en el dashboard de cada proyecto**: desmárcalo si la cifra solo tiene sentido para la
   empresa entera.
 - **Cómo se obtiene**:
@@ -379,7 +487,7 @@ que se actualizan mientras rellenas.
 Pulsa **Guardar**. KanriDO no deja guardar una fórmula que dependa de sí misma o de un indicador que
 no existe.
 
-### 3.5 El catálogo
+### 4.5 El catálogo
 
 El **Catálogo** (botón **Catálogo** en la lista de indicadores) reúne todo lo que KanriDO sabe medir,
 en paquetes por área: Contabilidad, Comercial, Proyectos, Operaciones y Dirección.
@@ -398,9 +506,9 @@ mismo. Activar uno no lo añade a ningún dashboard.
 
 ---
 
-## 4. Proyectos
+## 5. Proyectos
 
-### 4.1 Los proyectos se reconocen solos
+### 5.1 Los proyectos se reconocen solos
 
 No tienes que dar de alta tus proyectos. Cada código que aparece en la columna de proyecto de tus
 archivos —«P-103», «2024-017», el que uses— es un proyecto, y sus cifras se pueden ver en cuanto lo
@@ -415,7 +523,7 @@ La lista está en **Datos › Proyectos**. Puedes buscar por nombre o código y 
 
 ![La lista de proyectos](manual/proyectos-lista.png)
 
-### 4.2 Los estados del seguimiento
+### 5.2 Los estados del seguimiento
 
 Tu hoja de seguimiento escribe el estado de los proyectos con tus propias palabras: «En ejecución»,
 «Terminado», «Ofertado»… KanriDO trabaja con cuatro estados:
@@ -432,7 +540,7 @@ cuentan como activos.
 
 ![La traducción de las palabras de estado](manual/proyectos-estados.png)
 
-### 4.3 Completar un proyecto
+### 5.3 Completar un proyecto
 
 Si algo de un proyecto no viene en tu seguimiento, puedes completarlo a mano: pulsa **Completar** en
 su fila. Puedes darle un nombre visible, un estado, un tipo, sus líneas de negocio, sus fechas y si
@@ -445,24 +553,49 @@ de proyectos»: para cambiarlo, corrígelo en el archivo y vuelve a importarlo.
 
 El código del proyecto no se cambia nunca: es lo que une el proyecto con sus filas.
 
-### 4.4 Unir dos códigos o quitar uno de la lista
+### 5.4 Líneas de negocio y tipos de proyecto
+
+Son dos formas de agrupar tus proyectos, y cada una tiene su pestaña en **Datos › Proyectos**:
+
+- **Líneas de negocio**: las divisiones por las que se reparte la actividad, como Arquitectura o
+  Ingeniería. Un proyecto puede estar en varias a la vez.
+- **Tipos de proyecto**: la naturaleza del trabajo, como obra nueva, rehabilitación o auditoría. No
+  depende de la línea de negocio.
+
+Los indicadores que reparten por línea de negocio o por tipo usan estos grupos. Cada línea y cada
+tipo dicen cuántos proyectos tienen.
+
+![Las líneas de negocio que trae el seguimiento de proyectos](manual/proyectos-lineas.png)
+
+**Las que trae tu seguimiento** aparecen solas, con la marca **Del seguimiento de proyectos**. No se
+cambian aquí: se corrigen en el archivo y se vuelve a importar.
+
+**Las que no vienen en ningún archivo** se añaden a mano: escribe el nombre y pulsa **Añadir**.
+Después se asignan a cada proyecto desde **Completar**. También puedes:
+
+- **Renombrar** una línea o un tipo. Cambia solo el nombre que se ve, y las cifras ya calculadas se
+  mantienen.
+- **Eliminar** una línea o un tipo que ningún proyecto tenga asignado.
+
+### 5.5 Unir dos códigos o quitar uno de la lista
 
 A veces el mismo proyecto aparece con dos códigos, porque alguien lo escribió de otra forma. En el
 ejemplo, una persona apuntó sus horas en «P103» en lugar de «P-103». Para arreglarlo, en la fila del
-código mal escrito pulsa **Más › Unir con…** y elige el proyecto bueno.
+código mal escrito pulsa el botón de los tres puntos (**⋮**), elige **Unir con…** y marca el
+proyecto bueno.
 
 ![Unir «P103» con «Centro logístico Meridia»](manual/proyectos-unir.png)
 
 Desde ese momento, las filas de «P103» cuentan como del proyecto elegido, en la lista, en los
 repartos y en sus cifras. Tus archivos y tus filas no se tocan.
 
-Si un código no es un proyecto de verdad, pulsa **Más › Quitar de la lista**. Sus filas siguen
+Si un código no es un proyecto de verdad, pulsa **⋮ › Quitar de la lista**. Sus filas siguen
 contando en las cifras de toda la empresa, pero dejan de contar como proyecto.
 
 Las dos cosas se deshacen en la pestaña **Unidos y quitados**, con **Separar** o **Volver a la
 lista**.
 
-### 4.5 La pantalla de un proyecto
+### 5.6 La pantalla de un proyecto
 
 Para ver cómo va un proyecto, pulsa su nombre en la lista de proyectos, o en el reparto por proyecto
 de cualquier tarjeta.
@@ -480,4 +613,4 @@ retira sin tocar nada más.
 
 ---
 
-*KanriDO 1.0. Para avisar de un fallo o proponer una mejora, escribe a kanrido.contact@gmail.com.*
+*KanriDO 1.0.1. Para avisar de un fallo o proponer una mejora, escribe a kanrido.contact@gmail.com.*
