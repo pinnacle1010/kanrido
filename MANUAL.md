@@ -35,10 +35,16 @@ datos se quedan cifrados en tu equipo.
 La primera vez que abres KanriDO, un asistente de tres pasos lo deja listo. Si lo cierras a medias,
 al volver a abrirlo sigue en el mismo paso.
 
-**Paso 1: la contraseña local.** Escribe una contraseña de al menos 8 caracteres y repítela. Esta
-contraseña cifra tus datos y también sus copias de seguridad.
+**Paso 1: preferencias y contraseña.**
 
-![El primer paso del asistente: la contraseña local](manual/inicio-contrasena.png)
+- **Idioma**: español o inglés. Se elige aquí una sola vez: si te equivocas, vuelve con **Atrás**
+  hasta este paso, porque después ya no se puede cambiar.
+- **Moneda**: el símbolo de tus cifras. Cambiarlo no convierte ninguna cifra, y se puede cambiar
+  después en **Configuración › General**.
+- **Contraseña local**: escribe una contraseña de al menos 8 caracteres y repítela. Cifra tus datos
+  y también sus copias de seguridad.
+
+![El primer paso del asistente: preferencias y contraseña](manual/inicio-contrasena.png)
 
 - La casilla **No volver a pedir la contraseña en este equipo** viene marcada: así KanriDO se abre
   sin pedirla en este equipo. Si la desmarcas, te la pedirá cada vez que lo abras.
@@ -67,8 +73,8 @@ que has elegido. Con uno basta para ver las primeras cifras.
 
 ![La vista de ejemplo para quien empieza sin datos](manual/inicio-muestra.png)
 
-KanriDO prepara «Principal» con los indicadores de esas áreas que tus datos ya pueden calcular. Si
-todavía no hay datos, pone unos cuantos de cada área para empezar. Todo se puede cambiar después.
+«Principal» empieza con indicadores de las áreas elegidas. Los demás están en el
+[catálogo](#45-el-catálogo), y todo se puede cambiar después.
 
 **El recorrido.** Al llegar al dashboard, un recorrido corto te enseña dónde está cada cosa: las
 secciones, el botón **Editar**, el **+** para crear otro dashboard, la lista de indicadores y el
@@ -83,7 +89,7 @@ La barra lateral de la izquierda es la misma en todas las pantallas:
 - **Volver** te lleva un paso atrás, a la pantalla en la que estabas.
 - **Dashboard**: tus cifras. Es la pantalla del día a día.
 - **Datos**: lo que entra y cómo se organiza. Ahí están importar, el historial de datos, los
-  indicadores, las columnas, los proyectos y las copias de seguridad.
+  indicadores, los campos, los proyectos y las copias de seguridad.
 - **Configuración**: los ajustes, que normalmente se tocan una sola vez.
 - Al pie están el selector de **Periodo** (ver [El periodo y «Todo»](#33-el-periodo-y-todo)), la
   bandeja de **pendientes** —el reloj con un número, que reúne lo que espera una decisión tuya— y el
@@ -91,9 +97,9 @@ La barra lateral de la izquierda es la misma en todas las pantallas:
 
 ### 1.4 Elegir dónde se guardan las copias de seguridad
 
-KanriDO hace una copia de seguridad cada día y conserva las de las últimas semanas. Hasta que eliges
-una carpeta, las copias se guardan en el mismo equipo, así que si el equipo falla se pierden con él.
-Por eso la bandeja de pendientes, el reloj del pie de la barra, te lo recuerda desde el primer día.
+KanriDO hace una copia de seguridad cada día. Hasta que eliges una carpeta, las copias se quedan en
+el mismo equipo y, si el equipo falla, se pierden con él. La bandeja de pendientes, el reloj del pie
+de la barra, te lo recuerda hasta que la eliges.
 
 ![La bandeja de pendientes, con el recordatorio de la carpeta de copias](manual/inicio-pendientes.png)
 
@@ -101,9 +107,8 @@ Por eso la bandeja de pendientes, el reloj del pie de la barra, te lo recuerda d
 2. Pulsa **Elegir carpeta…** y elige una carpeta en otro disco, o una carpeta que ya sincronice tu
    nube (OneDrive, Dropbox, Google Drive).
 
-Junto a las copias se guarda la clave que las abre, protegida con tu contraseña local. Con esa
-carpeta entera y la contraseña puedes recuperar tus datos en cualquier otro equipo, desde el primer
-paso del asistente.
+Con esa carpeta entera y tu contraseña local puedes recuperar tus datos en cualquier otro equipo,
+desde el primer paso del asistente.
 
 En la misma pantalla, **Copia ahora** hace una copia en el momento, y **Restaurar** vuelve a una copia
 anterior al reiniciar la aplicación. Los datos que tenías hasta entonces se guardan aparte.
@@ -116,8 +121,7 @@ disponible**, con la versión nueva y la que tienes instalada:
 - **Instalar** la descarga y la instala. La aplicación se cierra para terminar de instalar.
 - **Aplazar** quita el aviso hasta la próxima vez que abras KanriDO.
 
-Nada se descarga ni se instala sin que lo pidas, y antes de instalarla se comprueba que la
-actualización la ha publicado KanriDO. Tus datos se conservan al actualizar.
+Nada se descarga ni se instala sin que lo pidas, y tus datos se conservan al actualizar.
 
 ---
 
@@ -126,14 +130,15 @@ actualización la ha publicado KanriDO. Tus datos se conservan al actualizar.
 Todo lo que entra en KanriDO pasa por **Datos › Importar**. Hay cuatro formas de aportar los datos:
 
 - **Subir Excel/CSV**: eliges un archivo y lo importas en el momento.
-- **Entrada manual**: escribes una fila a mano o pegas una tabla copiada de Excel o de Google Sheets.
+- **Entrada manual**: escribes un registro a mano o pegas una tabla copiada de Excel o de Google Sheets.
 - **Vigilar carpeta**: KanriDO importa solo lo que vaya apareciendo en una carpeta de tu equipo.
 - **Datos de otros programas**: exportas a CSV lo que lleve tu programa de facturación, tu CRM o tu
   programa de horas, y lo importas como cualquier otro archivo.
 
 Se leen libros de Excel (`.xlsx`, `.xlsm`, `.xlsb`, `.xls`) y archivos de texto con columnas (`.csv`,
 `.tsv`, `.txt`). No hace falta preparar nada: los números con punto de miles y coma decimal
-(«1.234,56») y las fechas como «25/12/2025» se entienden tal y como los escribes.
+(«1.234,56»), los negativos entre paréntesis que usan los programas de contabilidad («(1.234,56)»)
+y las fechas como «25/12/2025» se entienden tal y como los escribes.
 
 ### 2.1 Subir un archivo
 
@@ -141,35 +146,36 @@ Se leen libros de Excel (`.xlsx`, `.xlsm`, `.xlsb`, `.xls`) y archivos de texto 
 2. Elige el archivo, o arrástralo a la zona de subida.
 3. Revisa lo que KanriDO ha reconocido y pulsa **Importar**.
 
-**Si el libro tiene varias hojas**, KanriDO las lee todas. Vienen marcadas las que traen datos que
-reconoce y desmarcadas las demás, con el motivo. Cada hoja marcada entra como una carga propia, así
-que después puedes quitar una sin tocar las otras.
+**Si el libro tiene varias hojas**, se importan las que dejes marcadas. Las que KanriDO no reconoce
+vienen desmarcadas, con el motivo: si una trae datos que te interesan, márcala igualmente. Después
+podrás quitar una hoja sin tocar las otras.
 
 ![Un libro de facturas con una hoja por año y una hoja de notas](manual/importar-hojas.png)
 
 **Si encima de los nombres de columna hay un título**, como «Registro de facturas emitidas 2025»,
-KanriDO se da cuenta y toma los nombres de la fila siguiente. Te lo dice en naranja. Si no ha
-acertado, elige otra fila en **Fila con los nombres de columna**.
+KanriDO toma los nombres de la fila siguiente y te lo dice en naranja. Si no es la fila buena, elige
+otra en **Fila con los nombres de columna**.
 
 **Qué columna es cada dato.** Pulsa **Ver las columnas** para ver cómo ha entendido cada columna de
-tu archivo. A la izquierda está el nombre que trae el archivo; a la derecha, lo que significa para
-KanriDO. Las que ha reconocido solas llevan la marca **automático**.
+tu archivo. A la izquierda está el nombre que trae el archivo; a la derecha, en **Se guarda como**, el
+campo de KanriDO donde se guarda. Las que ha reconocido solas llevan la marca **automático**.
 
 ![La tabla de columnas de una hoja, con la fila de los nombres elegida](manual/importar-columnas.png)
 
-- Si una columna no está bien, cambia su valor en el desplegable.
-- Si una columna no te interesa, déjala en **(ignorar)**. Se guarda igualmente con el archivo, por si
-  la necesitas más adelante.
-- Si una columna trae un dato que KanriDO todavía no conoce, pulsa **Crear columna nueva** y se crea
-  con el nombre que tiene en tu archivo.
+- Si una columna no está bien, elige otro campo en el desplegable.
+- Si una columna no te interesa, déjala en **(ignorar)**. Si más adelante la necesitas, podrás
+  asignarla desde el [historial de datos](#24-el-historial-de-datos) sin volver a subir el archivo.
+- Si una columna trae un dato que KanriDO todavía no conoce, pulsa **Crear campo nuevo** y se crea
+  con el nombre que tiene la columna en tu archivo.
 - Si el archivo entero es de un proyecto y no trae una columna de proyecto, elígelo en **Proyecto de
   este documento**.
 - Deja marcada la casilla **Guardar el mapeo para futuras importaciones**: la próxima vez que subas
   un archivo con las mismas columnas, entrará ya asignado.
 
-**Si una fecha se puede leer de dos maneras**, como «03/04/2025» en un archivo donde ninguna fecha
-aclara si el día va delante, KanriDO te pregunta el orden antes de importar. Con una sola fecha como
-«25/12/2025» ya no pregunta.
+**Las fechas.** KanriDO reconoce por sí mismo si tus fechas llevan el día o el mes delante. Si tus
+datos no lo dejan claro, te lo pregunta una vez, al importar. Si se eligió mal, corrígelo en **Configuración ›
+General** y vuelve a importar los archivos que entraron con el orden equivocado, quitándolos antes en
+el [historial de datos](#24-el-historial-de-datos).
 
 **Si subes otra vez un archivo que ya importaste** (la versión de este mes de tu libro de
 facturas, por ejemplo), KanriDO te pregunta de cuál de tus archivos es versión nueva. Si le dices
@@ -177,16 +183,21 @@ cuál, la versión nueva sustituye a la anterior y no se suman las dos.
 
 ### 2.2 El resultado de la importación
 
-Al terminar, KanriDO te dice cuántas filas han entrado y a qué periodos van, y te avisa de lo que
+Al terminar, KanriDO te dice cuántos registros han entrado y a qué periodos van, y te avisa de lo que
 conviene revisar:
 
-- **Filas con datos faltantes**: filas a las que les falta un dato, por ejemplo una fecha. Se
-  arregla completando esas filas en tu archivo.
-- **Filas con un dato que no se ha podido interpretar**: el dato está, pero no se entiende, como
+- **Registros con datos faltantes**: registros a los que les falta un dato, por ejemplo una fecha. Se
+  arregla completando el dato en tu archivo.
+- **Registros con un dato que no se ha podido interpretar**: el dato está, pero no se entiende, como
   una fecha escrita de forma extraña. Se arregla corrigiendo esas casillas en tu archivo.
-- **Columnas que han llegado vacías**: la columna está en el archivo, pero no trae ningún valor.
+- **Columnas que venían en el archivo y han llegado vacías**: la columna está en el archivo, pero no
+  trae ningún valor. Mira el archivo de origen y, si ese dato no existe, deja la columna en
+  **(ignorar)**.
 
 ![El resultado de importar la hoja de seguimiento de proyectos](manual/importar-resultado.png)
+
+Si después no ves las cifras en el dashboard, elige **Todo** en el selector de periodo: puede que tus
+datos sean de otro ejercicio.
 
 Si importas tu hoja de seguimiento de proyectos, puede que además te pida traducir las palabras que
 usas para el estado de tus proyectos. Está explicado en [Proyectos](#52-los-estados-del-seguimiento).
@@ -200,13 +211,12 @@ entra solo.
 1. Entra en **Datos › Importar** y pulsa **Vigilar carpeta**.
 2. Pulsa **Elegir carpeta…** y elige la carpeta.
 
-KanriDO mira lo que ya hay dentro y lo que vaya llegando mientras la aplicación está abierta: al
-abrirla, cada pocos minutos y cuando pulsas **Actualizar ahora**. Lee también las subcarpetas, así
-que puedes ordenar los archivos por años o por meses como prefieras.
+Lo que ya hay dentro y lo que vaya llegando entra mientras la aplicación está abierta; si no quieres
+esperar, pulsa **Actualizar ahora**. Las subcarpetas también cuentan, así que puedes ordenar los
+archivos por años o por meses como prefieras.
 
-**La primera vez, un archivo se confirma a mano.** Un archivo entra solo cuando KanriDO ya sabe qué
-es cada una de sus columnas. Si alguna columna trae datos que nadie ha decidido todavía, el archivo
-queda en **Pendientes**, con su aviso también en la bandeja de pendientes del pie de la barra
+**La primera vez, cada formato se confirma a mano.** Un archivo con columnas que KanriDO todavía no
+conoce queda en **Pendientes**, con su aviso también en la bandeja de pendientes del pie de la barra
 lateral.
 
 ![Los partes de horas de 21 meses, esperando confirmación](manual/carpeta-pendientes.png)
@@ -225,34 +235,36 @@ después— entran solos. **Actividad reciente** te dice qué ha entrado y cuán
 Algunas cosas que conviene saber:
 
 - **Carpetas en la nube.** Puedes vigilar una carpeta sincronizada con OneDrive, Dropbox o Google
-  Drive. Si un archivo está solo en la nube, KanriDO lo descarga para leerlo; si no puede, te avisa
-  y lo vuelve a intentar en la siguiente revisión. Para evitarlo, marca la carpeta en el explorador
-  de Windows para que se conserve siempre en el equipo.
+  Drive. Si un archivo está solo en la nube y no se puede descargar, espera en **Pendientes** y entra
+  solo cuando se pueda. Para evitarlo, marca la carpeta en el explorador de Windows para que se
+  conserve siempre en el equipo.
 - **Todo lo que hay dentro se importa**, también las copias y las versiones antiguas que guardes en
-  alguna subcarpeta. Para dejar un archivo fuera, sácalo de la carpeta o pulsa **Ignorar** en su fila.
-- **Un archivo que ya entró y cambia** (porque lo has actualizado) se vuelve a leer y sustituye a su
-  versión anterior. Si la versión nueva no trae todas las filas de la anterior —como pasa con una
-  exportación de un solo mes—, no sustituye nada sin preguntarte: la pregunta te espera en la bandeja
-  de pendientes.
-- Los archivos temporales de Excel y los del sistema no se leen. Los que no son de un tipo que
-  KanriDO sepa leer se nombran aparte, sin contar como pendientes.
+  alguna subcarpeta. Para dejar un archivo fuera, sácalo de la carpeta o pulsa **Ignorar** junto a su
+  nombre.
+- **Si actualizas un archivo que ya entró**, la versión nueva sustituye a la anterior. Si le faltan
+  filas de la anterior —como a una exportación de un solo mes—, la bandeja de pendientes te pregunta
+  si la sustituye o se suma a ella.
+- **Fechas dudosas.** Si KanriDO todavía no sabe en qué orden escribes las fechas, el archivo espera
+  en **Pendientes**. Ábrelo y elige el orden al importar: los demás que esperaban entrarán solos.
+- Los archivos que KanriDO no sabe leer, como un PDF, aparecen aparte y no cuentan como pendientes.
 
 ### 2.4 El historial de datos
 
 En **Datos › Historial de datos** queda todo lo que les ha pasado a tus datos: cada importación y
-cada borrado, con su fecha, de dónde vino y cuántas filas movió.
+cada borrado, con su fecha, de dónde vino y cuántos registros movió.
 
 ![El historial, con los partes de horas que entraron por la carpeta vigilada](manual/historial.png)
 
 Desde aquí puedes:
 
-- **Ver las filas** de una carga, filtrarlas y quitar las que sobren, o quitar la carga entera. Las
+- **Ver los registros** de una carga, filtrarlos y quitar los que sobren, o quitar la carga entera. Las
   cifras se recalculan en unos segundos.
-- **Cambiar las columnas asignadas** de una carga, si al importarla asignaste mal alguna. No hace
-  falta volver a subir el archivo: KanriDO lo guardó entero.
+- **Cambiar las columnas asignadas** de una carga, si al importarla asignaste mal alguna, sin volver
+  a subir el archivo.
 - Elegir el **proyecto del documento** de una carga.
-- Revisar las filas que KanriDO ha señalado porque **pueden estar repetidas** (coinciden en proyecto,
-  fecha e importe con otras que ya tenías): decides tú si te quedas con las dos o descartas las nuevas.
+- Revisar los registros que KanriDO ha señalado porque **pueden estar repetidos** (coinciden en
+  proyecto, fecha e importe con otros que ya tenías): decides tú si te quedas con los dos o descartas
+  los nuevos.
 - **Exportar a CSV** el historial entero.
 
 ---
@@ -273,7 +285,8 @@ Cada tarjeta te dice:
   no se reparten por periodos, no lo llevan.
 - **El estado** de la cifra (ver el apartado siguiente).
 - **La cifra**, y a su lado la **variación** frente al periodo con el que se compara.
-- Si el indicador tiene historia, un pequeño gráfico con su evolución.
+- Debajo, su evolución o su reparto en grupos, según la forma elegida (ver
+  [Las formas de ver un indicador](#34-las-formas-de-ver-un-indicador)).
 - Abajo, el valor del periodo con el que se compara.
 
 ![La tarjeta de la facturación del mes](manual/tarjeta-serie.png)
@@ -292,14 +305,15 @@ y en el detalle:
 | **Sin datos** | No hay datos para calcularla en ese periodo. KanriDO nunca pone un 0 cuando no tiene datos. |
 | **No calculable** | Hay datos, pero la cuenta no tiene resultado, por ejemplo una división por cero. Pasa el ratón por encima para ver el motivo. |
 
-Cuando una tarjeta sale **Sin datos** porque a tus archivos les falta una columna, la tarjeta la
-nombra. En el ejemplo, ningún archivo trae las horas dedicadas a las propuestas:
+Cuando una tarjeta sale **Sin datos** porque ningún archivo trae el dato que necesita, la tarjeta
+nombra el campo que falta. Para tener esa cifra, importa un archivo que traiga ese dato. En el
+ejemplo, ningún archivo trae las horas dedicadas a las propuestas:
 
-![Una tarjeta sin datos que nombra la columna que falta](manual/tarjeta-sin-datos.png)
+![Una tarjeta sin datos que nombra el campo que falta](manual/tarjeta-sin-datos.png)
 
 En el dashboard de un proyecto verás además **Sin reparto por proyecto** en algunos indicadores.
 No es un fallo del periodo: es que ese indicador no se puede repartir por proyecto, por ejemplo
-porque sus datos no dicen de qué proyecto es cada fila. La tarjeta te dice el motivo.
+porque sus datos no dicen de qué proyecto es cada registro. La tarjeta te dice el motivo.
 
 ### 3.3 El periodo y «Todo»
 
@@ -325,39 +339,38 @@ Cada indicador se puede ver de cinco formas:
 
 - **KPI**: la cifra sola, grande.
 - **Línea**: la evolución periodo a periodo.
-- **Barra**: la cifra repartida en grupos, en barras.
+- **Barra**: la cifra repartida en grupos, en columnas en la tarjeta y en barras tumbadas en el
+  detalle.
 - **Tarta**: la cifra repartida en grupos, como partes de un todo.
 - **Tabla**: la cifra repartida en grupos, en una lista.
 
-![Una pestaña con línea, KPI, lista, tarta y barras](manual/dashboard-formas.png)
+![Una pestaña con línea, KPI, columnas, tarta y tabla](manual/dashboard-formas.png)
 
 La forma se elige en **Visualización**, al editar el indicador (ver
-[Crear o cambiar un indicador](#44-crear-o-cambiar-un-indicador)). Con **Automático**, KanriDO elige
-por ti: el reparto si el indicador reparte por grupos, la línea si tiene varios periodos y la cifra
-sola en los demás casos.
+[Crear o cambiar un indicador](#44-crear-o-cambiar-un-indicador)), y con **Automático** la elige
+KanriDO. Los indicadores del catálogo llegan ya con una forma elegida, que puedes cambiar igual.
 
-**Por qué a veces no aparece una forma.** Solo se ofrecen las que tienen sentido para ese indicador,
-y debajo del desplegable se dice qué cambiar para tener las demás:
+**Si no aparece la forma que buscas.** Solo se ofrecen las que encajan con el indicador, y debajo del
+desplegable se dice qué cambiar para tener las demás:
 
-- **Línea** necesita una periodicidad mensual, trimestral o anual: un indicador de estado actual no
-  tiene evolución que dibujar.
+- **Línea** necesita una periodicidad mensual, trimestral o anual.
 - **Barra**, **Tarta** y **Tabla** necesitan que el indicador reparta la cifra en grupos, en
   **Agrupar por**.
-- **Tarta** además solo está con **Suma** o **Recuento**: una media o un porcentaje no se pueden
-  partir en porciones que sumen el total.
+- **Tarta**, además, solo está con **Suma** o **Recuento**.
 
 ![Un indicador nuevo: sin «Agrupar por» no se ofrecen barras, tarta ni tabla](manual/constructor.png)
 
-Si un periodo concreto no tiene nada que repartir, la tarjeta enseña la cifra sola ese periodo, sin
-avisar: el estado de la cifra ya dice lo que pasa.
+A veces, en un periodo concreto, la tarjeta no enseña la forma elegida: cuando ese periodo no tiene
+nada que repartir, o cuando en una tarta algún grupo queda en negativo por un abono o una devolución.
+No es un fallo, y en los demás periodos vuelve la forma elegida.
 
 ### 3.5 El detalle de un indicador
 
 Al pulsar una tarjeta se abre su detalle, con:
 
 - **La cifra** del periodo y su variación.
-- **El gráfico de evolución**, con toda la serie del periodo elegido. El tramo **En curso** se dibuja
-  con línea discontinua. Un periodo sin datos se ve como un hueco en la línea, nunca como un cero.
+- **El gráfico de evolución**, con todos los años aunque hayas elegido uno. El tramo **En curso** se
+  dibuja con línea discontinua. Un periodo sin datos se ve como un hueco en la línea, nunca como un cero.
   El gráfico aparece cuando hay datos de dos periodos o más.
 - **Cómo se calcula**: la definición del indicador en una frase, de dónde saca los datos, su
   periodicidad y su comparativa.
@@ -365,17 +378,19 @@ Al pulsar una tarjeta se abre su detalle, con:
 ![El detalle de la facturación mensual](manual/detalle-serie.png)
 
 **Los desgloses.** Si el indicador reparte la cifra en grupos —por cliente, por proyecto, por
-persona—, el detalle enseña el reparto completo del periodo. La tarjeta, que tiene menos sitio,
-enseña los tres primeros y cuántos más hay («+2 más»).
+persona—, el detalle enseña el reparto completo del periodo en lugar del gráfico de evolución. Para
+ver también la evolución, elige la forma **Línea**. La tarjeta, que tiene menos sitio, enseña solo
+los primeros grupos y cuántos más hay («+2 más»).
 
 ![El reparto de la facturación del mes por cliente](manual/detalle-desglose.png)
 
 En un reparto verás a veces dos grupos especiales:
 
-- **Sin valor**: las filas que no traen dato en la columna por la que se reparte. En el ejemplo, una
-  factura de este mes no tiene cliente. Se cuentan igual en la cifra de arriba.
-- **Otros**: un reparto enseña como mucho 50 grupos, los más recientes. El resto se junta en «Otros»,
-  con su total. La cifra de arriba no cambia.
+- **Sin valor**: los registros que no traen dato en el campo por el que se reparte. En el ejemplo, una
+  factura de este mes no tiene cliente. Se cuentan igual en la cifra de arriba; para repartirlos,
+  completa ese dato en tu archivo.
+- **Otros**: si hay más de 50 grupos, los menos recientes se juntan aquí, con su total. La cifra de
+  arriba no cambia.
 
 **La comparativa.** Un indicador puede compararse con el periodo anterior, con el mismo periodo del
 año anterior, con un valor fijo o con la media de varios periodos, en valor absoluto o en
@@ -398,7 +413,7 @@ Tres ideas para orientarse:
 - Un **dashboard** es una pestaña con los indicadores que tú elijas. Puedes tener varios.
 
 Reorganizar dashboards o datasets **nunca cambia una cifra**, y quitar un indicador de un dashboard no
-lo borra: se sigue calculando y sigue en los demás dashboards que lo lleven.
+lo borra: sigue en la lista de indicadores y en los demás dashboards que lo lleven.
 
 Si un dashboard enseña un indicador sin el dataset en el que va, la tarjeta aparece al final, en
 **Otros indicadores**. Su cifra es igual de correcta. Para colocarla en una sección, asígnale un
@@ -418,7 +433,7 @@ En modo edición puedes:
 - Moverlo a la izquierda o a la derecha con las flechas.
 - Elegir **qué indicadores enseña**. Marcar un dataset lo añade como sección con todos sus indicadores
   activos; con la flecha de su nombre lo despliegas y marcas o quitas cada uno. El filtro
-  **Columna** y el buscador te ayudan a encontrar un indicador concreto.
+  **Campo** y el buscador te ayudan a encontrar un indicador concreto.
 - Plegar, ocultar y ordenar las secciones.
 - **Borrar este dashboard**. Sus indicadores no se borran. El último dashboard no se puede borrar: si
   quieres empezar de cero, cámbiale el nombre y quítale los indicadores.
@@ -433,9 +448,9 @@ proyecto por su nombre o su código.
 
 ![Un dashboard con las cifras de un solo proyecto](manual/dashboard-proyecto.png)
 
-Debajo del nombre, la pestaña dice siempre de qué proyecto son sus cifras. Las cifras de un proyecto
-se calculan aparte, así que la primera vez tardan unos segundos en aparecer. Para volver a las cifras
-de toda la empresa, elige **Toda la empresa** en esa misma lista.
+Debajo del nombre, la pestaña dice siempre de qué proyecto son sus cifras. La primera vez, las cifras
+tardan unos segundos en aparecer. Para volver a las cifras de toda la empresa, elige **Toda la
+empresa** en esa misma lista.
 
 Si solo quieres echar un vistazo a un proyecto, no hace falta crear un dashboard: ábrelo desde su
 lista (ver [La pantalla de un proyecto](#56-la-pantalla-de-un-proyecto)).
@@ -463,8 +478,8 @@ que se actualizan mientras rellenas.
 
 ![La edición de un indicador guiado](manual/constructor-editar.png)
 
-- **Nombre**, **Datasets** en los que está y **Unidad** (€, %, horas…). Si la dejas vacía, toma la de
-  la columna que suma.
+- **Nombre**, **Datasets** en los que está y **Unidad** (€, %, horas…). Si la dejas vacía, toma la del
+  campo que suma.
 - **Periodicidad**: **Mensual**, **Trimestral**, **Anual** o **Estado actual** (una cifra del
   momento, sin evolución).
 - **Visualización**: la forma de la tarjeta (ver [3.4](#34-las-formas-de-ver-un-indicador)).
@@ -472,14 +487,14 @@ que se actualizan mientras rellenas.
   empresa entera.
 - **Cómo se obtiene**:
   - **Guiado**: eliges una **Operación** (**Suma**, **Recuento**, **Media** o **Valores distintos**),
-    la **Columna** sobre la que se hace y la **Columna de fecha** que la reparte por periodos. Sin
-    columna de fecha, el indicador da una sola cifra del momento. Con **Agrupar por** repartes la
+    el **Campo** sobre el que se hace y el **Campo de fecha** que la reparte por periodos. Sin
+    campo de fecha, el indicador da una sola cifra del momento. Con **Agrupar por** repartes la
     cifra por cliente, estado, persona u otro dato que la clasifique.
   - **Fórmula**: combinas dos indicadores que ya existen, con una suma, una resta, una
     multiplicación, una división o una variación porcentual. Los dos tienen que tener la misma
     periodicidad que la fórmula. Para una cuenta más larga, crea antes los indicadores intermedios.
   - **Manual**: escribirás tú el valor de cada periodo, en el detalle del indicador.
-- **Filtros**: para contar solo algunas filas, por ejemplo las facturas con estado «pendiente». Se
+- **Filtros**: para contar solo algunos registros, por ejemplo las facturas con estado «pendiente». Se
   tienen que cumplir todos a la vez.
 - **Comparativa** y **Mostrar en la tarjeta**: con qué se compara la cifra y si la variación se ve
   en la tarjeta.
@@ -494,10 +509,9 @@ en paquetes por área: Contabilidad, Comercial, Proyectos, Operaciones y Direcci
 
 ![El catálogo, con los paquetes ordenados por lo que tus datos ya pueden calcular](manual/catalogo.png)
 
-- Cada paquete dice **cuántos de sus indicadores se pueden calcular ya** con los datos que has
-  importado, y los paquetes van ordenados por eso.
+- Cada paquete dice **cuántos de sus indicadores se pueden calcular ya** con tus datos.
 - Al desplegar un paquete ves sus indicadores. Los que están sin activar se activan con **Activar**.
-- **Faltan columnas** te dice qué datos convendría traer para alimentar el resto: es el sitio donde
+- **Faltan campos** te dice qué datos convendría traer para alimentar el resto: es el sitio donde
   mirar qué archivos te conviene importar.
 - El buscador de arriba encuentra un indicador o un paquete por su nombre.
 
@@ -542,8 +556,8 @@ cuentan como activos.
 
 ### 5.3 Completar un proyecto
 
-Si algo de un proyecto no viene en tu seguimiento, puedes completarlo a mano: pulsa **Completar** en
-su fila. Puedes darle un nombre visible, un estado, un tipo, sus líneas de negocio, sus fechas y si
+Si algo de un proyecto no viene en tu seguimiento, puedes completarlo a mano: pulsa **Completar** junto
+a su nombre. Puedes darle un nombre visible, un estado, un tipo, sus líneas de negocio, sus fechas y si
 tiene financiación pública.
 
 ![Completar un proyecto que no viene en el seguimiento](manual/proyectos-completar.png)
@@ -551,7 +565,8 @@ tiene financiación pública.
 Lo que sí trae tu seguimiento aparece aquí sin poder cambiarse, con la nota «Viene del seguimiento
 de proyectos»: para cambiarlo, corrígelo en el archivo y vuelve a importarlo.
 
-El código del proyecto no se cambia nunca: es lo que une el proyecto con sus filas.
+El código del proyecto no se puede cambiar. Si un mismo proyecto aparece con dos códigos, únelos (ver
+[Unir dos códigos](#55-unir-dos-códigos-o-quitar-uno-de-la-lista)).
 
 ### 5.4 Líneas de negocio y tipos de proyecto
 
@@ -571,7 +586,12 @@ tipo dicen cuántos proyectos tienen.
 cambian aquí: se corrigen en el archivo y se vuelve a importar.
 
 **Las que no vienen en ningún archivo** se añaden a mano: escribe el nombre y pulsa **Añadir**.
-Después se asignan a cada proyecto desde **Completar**. También puedes:
+Después se asignan a cada proyecto desde **Completar**.
+
+Para asignar a un proyecto una línea o un tipo que solo trae el seguimiento, añádelo aquí con el
+mismo nombre: así aparece en **Completar**.
+
+También puedes:
 
 - **Renombrar** una línea o un tipo. Cambia solo el nombre que se ve, y las cifras ya calculadas se
   mantienen.
@@ -580,16 +600,16 @@ Después se asignan a cada proyecto desde **Completar**. También puedes:
 ### 5.5 Unir dos códigos o quitar uno de la lista
 
 A veces el mismo proyecto aparece con dos códigos, porque alguien lo escribió de otra forma. En el
-ejemplo, una persona apuntó sus horas en «P103» en lugar de «P-103». Para arreglarlo, en la fila del
-código mal escrito pulsa el botón de los tres puntos (**⋮**), elige **Unir con…** y marca el
+ejemplo, una persona apuntó sus horas en «P103» en lugar de «P-103». Para arreglarlo, junto al código
+mal escrito pulsa el botón de los tres puntos (**⋮**), elige **Unir con…** y marca el
 proyecto bueno.
 
 ![Unir «P103» con «Centro logístico Meridia»](manual/proyectos-unir.png)
 
-Desde ese momento, las filas de «P103» cuentan como del proyecto elegido, en la lista, en los
-repartos y en sus cifras. Tus archivos y tus filas no se tocan.
+Desde ese momento, los registros de «P103» cuentan como del proyecto elegido, en la lista, en los
+repartos y en sus cifras. Tus archivos y tus registros no se tocan.
 
-Si un código no es un proyecto de verdad, pulsa **⋮ › Quitar de la lista**. Sus filas siguen
+Si un código no es un proyecto de verdad, pulsa **⋮ › Quitar de la lista**. Sus registros siguen
 contando en las cifras de toda la empresa, pero dejan de contar como proyecto.
 
 Las dos cosas se deshacen en la pestaña **Unidos y quitados**, con **Separar** o **Volver a la
@@ -600,17 +620,16 @@ lista**.
 Para ver cómo va un proyecto, pulsa su nombre en la lista de proyectos, o en el reparto por proyecto
 de cualquier tarjeta.
 
-La pantalla del proyecto enseña la **evolución de su presupuesto** —una fila por cada carga del
+La pantalla del proyecto enseña la **evolución de su presupuesto** —una cifra por cada carga del
 seguimiento que lo trae— y sus cifras, por secciones como en el dashboard. No salen los indicadores
 en los que se desmarcó **Mostrar en el dashboard de cada proyecto**.
 
 ![La pantalla de un proyecto](manual/proyecto.png)
 
-Las cifras de un proyecto se calculan aparte y solo para los proyectos que alguien mira. La primera
-vez pulsa **Calcular este proyecto**: tardan unos segundos en aparecer, y a partir de ahí se
-recalculan solas con cada importación. Si ya no te interesa, **Dejar de calcular este proyecto** las
-retira sin tocar nada más.
+La primera vez pulsa **Calcular este proyecto**: las cifras tardan unos segundos en aparecer y
+después se ponen al día solas con cada importación. Si ya no te interesa, pulsa **Dejar de calcular
+este proyecto**; no se borra nada más.
 
 ---
 
-*KanriDO 1.0.1. Para avisar de un fallo o proponer una mejora, escribe a kanrido.contact@gmail.com.*
+*KanriDO 1.1.0. Para avisar de un fallo o proponer una mejora, escribe a kanrido.contact@gmail.com.*

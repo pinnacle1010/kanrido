@@ -27,7 +27,7 @@ Comparar la tuya con la publicada confirma que has descargado exactamente el arc
 Para calcularla, abre PowerShell en la carpeta de descargas y escribe:
 
 ```
-Get-FileHash -Algorithm SHA256 .\KanriDO_1.0.0_x64-setup.exe
+Get-FileHash -Algorithm SHA256 .\KanriDO_1.1.0_x64-setup.exe
 ```
 
 Cambia el número de versión por el del archivo que hayas descargado. Compara el resultado con la

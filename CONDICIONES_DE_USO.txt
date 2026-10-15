@@ -1,6 +1,6 @@
 CONDICIONES DE USO DE KanriDO
 
-Última actualización: 29 de septiembre de 2026
+Última actualización: 14 de octubre de 2026
 
 La instalación de KanriDO implica la aceptación de estas condiciones. Quien no
 las acepte no debe continuar con la instalación.
@@ -25,9 +25,9 @@ presenta indicadores de negocio de forma local.
   todos los usuarios reciben la misma versión.
 - No requiere registro ni cuenta de usuario, y no incorpora ningún mecanismo que
   verifique o limite su uso.
-- No envía datos de negocio, telemetría ni informes automáticos de error. La
-  única conexión que establece es la comprobación de versiones nuevas descrita
-  en el apartado 5.
+- No envía datos de negocio, información sobre su uso ni informes automáticos
+  de error. Solo establece dos conexiones, descritas en el apartado 5: un aviso
+  único tras instalarse y la comprobación de versiones nuevas.
 
 La función de la aplicación se limita a presentar los datos que introduce el
 usuario. KanriDO no aporta información propia, no verifica los datos importados
@@ -81,7 +81,14 @@ al usuario:
 - Comprobar los resultados antes de adoptar decisiones basadas en ellos.
 
 
-5. ACTUALIZACIONES
+5. AVISO DE INSTALACIÓN Y ACTUALIZACIONES
+
+La primera vez que se inicia tras instalarse, la aplicación envía un único
+aviso, sin ningún contenido, a un servicio del titular alojado en Cloudflare,
+para contar las instalaciones por país y por día. Ese servicio deduce el país
+de la dirección IP desde la que llega el aviso, anota ese país y el día de
+llegada, y no conserva la dirección IP. Sin conexión a internet, el aviso se
+envía en un inicio posterior. Las actualizaciones no lo envían.
 
 Las versiones nuevas se publican en el sitio oficial. Al iniciarse, la
 aplicación consulta dicho sitio para comprobar si existe una versión más

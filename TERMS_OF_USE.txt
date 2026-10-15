@@ -1,0 +1,175 @@
+﻿KANRIDO TERMS OF USE
+
+Last updated: October 14, 2026
+
+This is a courtesy translation of the Spanish original, "Condiciones de uso de
+KanriDO", published at the same address. If the two versions differ, the
+Spanish version prevails.
+
+Installing KanriDO means accepting these terms. If you do not accept them, do
+not continue with the installation.
+
+The current version of this text is published at
+https://github.com/pinnacle1010/kanrido
+
+
+1. OWNER
+
+KanriDO is an application developed and published by César Calabuig Llamas
+(hereinafter, the owner). Contact: kanrido.contact@gmail.com.
+
+
+2. PURPOSE AND FEATURES OF THE APPLICATION
+
+KanriDO is a desktop application that is installed and runs on the user's
+computer. It imports the files the user provides and calculates and presents
+business KPIs locally.
+
+- It is free: there are no plans, subscriptions, payments or trial periods,
+  and all users receive the same version.
+- It requires no registration or user account, and it includes no mechanism
+  that verifies or limits its use.
+- It does not send business data, information about its use or automatic
+  error reports. It makes only two connections, described in section 5: a
+  one-time notice after it is installed and the check for new versions.
+
+The application only presents the data the user enters. KanriDO does not
+provide information of its own, does not verify the imported data and does
+not correct errors in the source files: it reads, groups and presents them. If
+a source figure is wrong, incomplete or misclassified, the result shown will
+be too. The application is not a verification, audit or control tool, and its
+results do not prove any fact to third parties.
+
+
+3. LICENSE TO USE
+
+The owner grants the user a free, non-exclusive, non-transferable and
+revocable license to install and use KanriDO in accordance with these terms.
+
+The license allows the user to:
+
+- Install and use the application for the user's own purposes, whether
+  personal or those of the company or firm that downloads it.
+- Install it on the computers the user needs for that same activity.
+- Make backups of the user's data and of the installed application.
+
+The license does not allow the user to:
+
+- Redistribute the application, that is, publish, host or deliver it to third
+  parties, whether or not for profit. The application is obtained only from
+  the official site, where the verifiable versions are published.
+- Copy or reproduce the application beyond the use and installation described
+  above.
+- Sell, rent, assign or sublicense it.
+- Reverse engineer, decompile or disassemble it, except to the extent that the
+  law expressly permits.
+- Remove or alter the notices of authorship, trademark or license.
+- Use it in any way contrary to the law.
+
+
+4. THE USER'S DATA AND RESPONSIBILITIES
+
+The user's business data is stored encrypted on the user's computer and is not
+sent to any server. Given the local nature of the application, the user is
+responsible for:
+
+- Keeping their computer secure.
+- Safeguarding their local password. If both the local password and the
+  computer on which the application is installed, or its Windows user, are
+  lost, the encrypted data and its backups cannot be recovered, and the owner
+  cannot decrypt them either.
+- Keeping the backups. The application makes them automatically in the folder
+  the user chooses, and looking after that folder is the user's
+  responsibility.
+- Checking the results before making decisions based on them.
+
+
+5. INSTALLATION NOTICE AND UPDATES
+
+The first time it starts after being installed, the application sends a single
+notice, with no content, to a service of the owner hosted on Cloudflare, to
+count installations by country and by day. That service works out the country
+from the IP address the notice comes from, records that country and the day it
+arrives, and does not keep the IP address. Without an internet connection, the
+notice is sent at a later start. Updates do not send it.
+
+New versions are published on the official site. When it starts, the
+application checks that site to see whether a more recent version exists. This
+check includes no business data of the user; the service that receives it
+(GitHub) records the IP address it comes from, as with any visit to a website.
+
+If a new version exists, the application says so and only downloads and
+installs it when the user asks. Before installing it, it verifies that it is
+signed by the owner and, if the signature is not valid, it does not install
+it. Without an internet connection, the check is not made and the application
+works normally.
+
+
+6. WARRANTIES AND LIABILITY
+
+The application is provided as is and as available, without warranties of any
+kind, express or implied. In particular, there is no warranty that it will
+work without interruption or errors, that its results are accurate, that it is
+fit for a particular purpose, that it is compatible with any computer or
+program, or that it will be published or maintained in the future. The user
+installs and uses it at their own sole risk.
+
+To the fullest extent permitted by law, the owner shall not be liable for any
+damage arising from the use of the application. This exclusion includes,
+without limitation: the loss or corruption of data, including the encrypted
+database and the backups; economic damage of any kind; the decisions that the
+user or third parties make based on what the application shows, and their
+consequences inside or outside it, whether business, economic, employment,
+contractual, accounting or tax related, and whether for the user or for third
+parties; failures of the computer, the operating system, the network or the
+third-party programs with which the application coexists; and the
+interruption of the service, the absence of updates or any security incident.
+
+The KPIs are an aid for analyzing one's own data. They are not financial,
+accounting, tax or legal advice, and they do not replace the review of a
+professional. It is solely the user's responsibility to check the results
+before making any decision.
+
+The user is solely responsible for their data, their local password and the
+keeping of their backups.
+
+Nothing in the above excludes or limits liability for willful misconduct or
+gross negligence, for personal injury or any other liability that the law does
+not allow to be excluded, in particular the rights that consumer protection
+law grants to consumers.
+
+
+7. SUSPENSION AND TERMINATION
+
+The user may stop using the application and uninstall it at any time; their
+data remains on their computer and they may delete it whenever they see fit.
+
+The owner may stop publishing or maintaining the application at any time.
+This does not affect existing installations: their use does not depend on any
+online check, so an installed copy keeps working without depending on any
+external service.
+
+
+8. INTELLECTUAL PROPERTY
+
+The application, its code and its distinctive signs belong to the owner. The
+user's data belongs exclusively to the user, and these terms do not grant the
+owner any right over it.
+
+The application includes third-party open-source components, among them
+SQLCipher and OpenSSL, whose attributions appear on the "About" screen in
+compliance with their licenses.
+
+
+9. CHANGES TO THESE TERMS
+
+The owner may change these terms. The current version is published at
+https://github.com/pinnacle1010/kanrido, with the date of its last update.
+Changes apply to downloads and installations made after their publication.
+
+
+10. GOVERNING LAW
+
+These terms, and any dispute or legal action arising from the use of the
+application, are governed by Spanish law. Where the user is a consumer, the
+competent courts are those determined by the applicable mandatory rules.

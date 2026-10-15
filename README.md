@@ -1,3 +1,5 @@
+*Read this in English: [README.en.md](README.en.md)*
+
 # KanriDO
 
 Los indicadores de tu negocio, calculados a partir de los archivos que ya tienes.
@@ -18,7 +20,8 @@ adjunto y su huella SHA-256 al lado.
 - Al abrir el instalador, Windows muestra un aviso: está explicado en
   [El aviso de Windows](EL_AVISO_DE_WINDOWS.md), junto con cómo comprobar que el archivo es el
   correcto.
-- El instalador muestra las condiciones de uso y hay que aceptarlas para continuar.
+- El instalador pregunta el idioma y muestra las condiciones de uso, que hay que aceptar para
+  continuar.
 
 ## Para quién es
 
@@ -50,11 +53,13 @@ organizar tus dashboards e indicadores y cómo trabajar con tus proyectos. Tambi
 
 ## Tus datos
 
-KanriDO no envía datos de negocio, ni telemetría, ni informes automáticos de error. Todo lo que
-importas vive cifrado en tu equipo, y las copias de seguridad van a la carpeta que tú elijas.
+KanriDO no envía datos de negocio, ni informes de uso, ni informes automáticos de error. Todo lo
+que importas vive cifrado en tu equipo, y las copias de seguridad van a la carpeta que tú elijas.
 
-Lo único que consulta en internet es si hay una versión nueva, al arrancar y en esta misma página.
-Si la hay, te avisa, y solo la descarga e instala si se lo pides.
+En internet solo hace dos cosas. La primera vez que arranca tras instalarse, envía un aviso vacío
+que cuenta las instalaciones por país y por día, sin guardar tu dirección IP. Y al arrancar
+consulta en esta misma página si hay una versión nueva: si la hay, te avisa, y solo la descarga e
+instala si se lo pides.
 
 La contraseña local es la llave: si se pierde a la vez que el equipo, los datos cifrados no se pueden
 recuperar. Eso también vale para las copias.
@@ -66,7 +71,7 @@ Escribe a **kanrido.contact@gmail.com**, o abre un tema en la pestaña
 
 Al escribir, indica la versión que aparece en «Acerca de», qué estabas haciendo y qué esperabas ver.
 Si el problema es con un archivo concreto, describe cómo son sus columnas. **No hace falta enviar el
-archivo ni tus datos**, y conviene no hacerlo: KanriDO no envía nada fuera de tu equipo y el correo
+archivo ni tus datos**, y conviene no hacerlo: KanriDO no envía tus datos fuera de tu equipo y el correo
 tampoco debería.
 
 ## Quién está detrás
