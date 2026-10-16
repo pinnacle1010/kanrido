@@ -1,6 +1,11 @@
 *Léelo en español: [README.md](README.md)*
 
-# KanriDO
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="marca/logo-oscuro.png">
+    <img src="marca/logo.png" alt="KanriDO" width="320">
+  </picture>
+</h1>
 
 Your business KPIs, calculated from the files you already have.
 

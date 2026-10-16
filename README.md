@@ -1,6 +1,11 @@
 *Read this in English: [README.en.md](README.en.md)*
 
-# KanriDO
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="marca/logo-oscuro.png">
+    <img src="marca/logo.png" alt="KanriDO" width="320">
+  </picture>
+</h1>
 
 Los indicadores de tu negocio, calculados a partir de los archivos que ya tienes.
 
