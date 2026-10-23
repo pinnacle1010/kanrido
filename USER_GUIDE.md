@@ -69,6 +69,11 @@ chose. One file is enough to see the first figures.
 - If you have it at hand, import it right there: choose the file, check which column is each piece
   of data and click **Import**, as explained in [Uploading a file](#21-uploading-a-file). Then click
   **Create the dashboard**.
+- If your files are in a folder, choose **Watch a folder**. They open one at a time so you can
+  confirm their columns, and the ones with the same columns as a file you've already confirmed come
+  in on their own. **Skip this file** moves on to the next one, and **Leave the rest for later**
+  continues with the setup: whatever you haven't confirmed waits under **Pending**, as explained in
+  [The watched folder](#23-the-watched-folder).
 - If you'd rather start without data, click **Continue without data**. You'll see what the dashboard
   will look like, with example figures that aren't saved, and **Go to the dashboard** takes you into
   the app.
@@ -94,8 +99,9 @@ The sidebar on the left is the same on every screen:
   backups are there.
 - **Settings**: the settings, which you normally change only once.
 - At the bottom are the **Period** selector (see [The period and “All”](#33-the-period-and-all)),
-  the **To do** tray (the clock with a number, which gathers what's waiting for a decision from you)
-  and the button to switch between the light and dark themes.
+  the **To do** tray (the clock with a number, which gathers what's waiting for a decision from you),
+  the **Help** button, to report a problem or suggest an improvement, and the button to switch
+  between the light and dark themes.
 
 ### 1.4 Choosing where backups are saved
 
@@ -233,8 +239,8 @@ on **(ignore)**: that's a decision too, and it's remembered.
 ![Confirming the first timesheet](user_guide/carpeta-confirmar.png)
 
 From then on, every file with those same columns, both the ones that were waiting and the ones that
-arrive later, comes in on its own. **Recent activity** tells you what came in and how many rows each
-one had.
+arrive later, comes in on its own. The summary of that import counts their records under **Imported
+from other files**, and **Recent activity** tells you what came in and how many rows each one had.
 
 ![The timesheets, imported on their own](user_guide/carpeta-actividad.png)
 
@@ -631,4 +637,6 @@ project**; nothing else is deleted.
 
 ---
 
-*KanriDO 1.1.0. To report a problem or suggest an improvement, write to kanrido.contact@gmail.com.*
+*KanriDO 1.2.0. To report a problem or suggest an improvement, click **Help** at the bottom of the
+sidebar: it prepares the message in your email app, and you send it from there. You can also write
+directly to kanrido.contact@gmail.com.*

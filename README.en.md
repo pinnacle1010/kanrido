@@ -7,7 +7,7 @@
   </picture>
 </h1>
 
-Your business KPIs, calculated from the files you already have.
+Your company's numbers, all on one screen.
 
 KanriDO is a desktop app for Windows. It imports your spreadsheets in the format you already keep
 them in, calculates the KPIs and shows them on a dashboard. The data stays encrypted on your

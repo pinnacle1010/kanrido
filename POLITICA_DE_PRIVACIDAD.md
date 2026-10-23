@@ -1,14 +1,14 @@
 # Política de privacidad de KanriDO
 
-Última actualización: 14 de octubre de 2026.
+Última actualización: 23 de octubre de 2026.
 
 ## 1. Responsable del tratamiento
 
 - **Responsable**: César Calabuig Llamas.
 - **Contacto**: kanrido.contact@gmail.com.
 
-Esta política cubre **la página de descargas de KanriDO** (github.com/pinnacle1010/kanrido) y el
-contacto por correo. La aplicación se trata aparte, en el apartado 2, porque su situación es
+Esta política cubre **la página de descargas de KanriDO** (github.com/pinnacle1010/kanrido), **su
+ficha en la Microsoft Store** y el contacto por correo. La aplicación se trata aparte, en el apartado 2, porque su situación es
 distinta.
 
 ## 2. Qué envía la aplicación
@@ -30,7 +30,8 @@ En internet solo hace dos cosas:
   versiones, el archivo que dice cuál es la última. Esa petición no lleva ningún dato de negocio ni
   ningún identificador del usuario; GitHub ve la dirección IP desde la que se hace, como en
   cualquier visita, y la trata según su propia política. La versión nueva solo se descarga si el
-  usuario lo pide.
+  usuario lo pide. La versión de la Microsoft Store no hace esta comprobación: la actualiza la propia
+  Store.
 
 En consecuencia, respecto de los datos que el usuario trata con la aplicación, César Calabuig Llamas
 **no es responsable ni encargado del tratamiento**: no los recibe, no los aloja y no puede acceder a
@@ -42,7 +43,8 @@ de almacenamiento que él tenga configurado. César Calabuig Llamas no intervien
 
 ## 3. Qué trata César Calabuig Llamas
 
-No hay web propia: la página de descargas es un repositorio de GitHub (apartado 4). Por parte de
+No hay web propia: la página de descargas es un repositorio de GitHub y la ficha de la Microsoft Store
+la aloja Microsoft (apartado 4). Por parte de
 César Calabuig Llamas solo se trata esto, y ningún otro dato:
 
 | Dato | Finalidad | Base jurídica (RGPD art. 6) |
@@ -60,13 +62,18 @@ privacidad, sobre la que César Calabuig Llamas no tiene control:
 https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement. La
 comprobación de versiones nuevas del apartado 2 llega también a GitHub.
 
+La versión de la Microsoft Store se descarga y se actualiza desde la Store, que trata esos datos
+conforme a la declaración de privacidad de Microsoft, sobre la que César Calabuig Llamas tampoco tiene
+control: https://privacy.microsoft.com/es-es/privacystatement.
+
 ## 5. Destinatarios
 
 No se venden ni se ceden datos a terceros con fines comerciales.
 
 Intervienen GitHub, que aloja la descarga y trata los metadatos de cada petición según su propia
-política; Cloudflare, que aloja el servicio que cuenta las instalaciones y recibe la dirección IP del
-aviso del apartado 2, y Google (Gmail), que sirve el correo de contacto.
+política; Microsoft, que distribuye la versión de la Microsoft Store según la suya; Cloudflare, que
+aloja el servicio que cuenta las instalaciones y recibe la dirección IP del aviso del apartado 2, y
+Google (Gmail), que sirve el correo de contacto.
 
 ## 6. Transferencias internacionales
 

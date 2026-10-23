@@ -68,6 +68,11 @@ que has elegido. Con uno basta para ver las primeras cifras.
 - Si lo tienes a mano, impórtalo ahí mismo: eliges el archivo, compruebas qué columna es cada dato y
   pulsas **Importar**, como se explica en [Subir un archivo](#21-subir-un-archivo). Después pulsa
   **Crear el dashboard**.
+- Si tus archivos están en una carpeta, elige **Vigilar carpeta**. Se abren de uno en uno para que
+  confirmes sus columnas, y los que tienen las mismas columnas que uno ya confirmado entran solos.
+  **Saltar este archivo** pasa al siguiente, y **Dejar el resto pendiente** sigue con el asistente:
+  lo que no hayas confirmado espera en **Pendientes**, como se explica en
+  [La carpeta vigilada](#23-la-carpeta-vigilada).
 - Si prefieres empezar sin datos, pulsa **Seguir sin datos**. Verás cómo quedará el dashboard, con
   cifras de ejemplo que no se guardan, y con **Ir al dashboard** entras en la aplicación.
 
@@ -92,8 +97,9 @@ La barra lateral de la izquierda es la misma en todas las pantallas:
   indicadores, los campos, los proyectos y las copias de seguridad.
 - **Configuración**: los ajustes, que normalmente se tocan una sola vez.
 - Al pie están el selector de **Periodo** (ver [El periodo y «Todo»](#33-el-periodo-y-todo)), la
-  bandeja de **pendientes** —el reloj con un número, que reúne lo que espera una decisión tuya— y el
-  botón para cambiar entre el tema claro y el oscuro.
+  bandeja de **pendientes** —el reloj con un número, que reúne lo que espera una decisión tuya—, el
+  botón **Ayuda**, para avisar de un fallo o proponer una mejora, y el botón para cambiar entre el
+  tema claro y el oscuro.
 
 ### 1.4 Elegir dónde se guardan las copias de seguridad
 
@@ -228,7 +234,8 @@ columna «Observaciones» queda en **(ignorar)**: también es una decisión, y s
 ![La confirmación del primer parte de horas](manual/carpeta-confirmar.png)
 
 A partir de ahí, todos los archivos con esas mismas columnas —los que esperaban y los que lleguen
-después— entran solos. **Actividad reciente** te dice qué ha entrado y cuántas filas traía cada uno.
+después— entran solos. El resumen de esa importación cuenta sus registros en **Importados de otros
+archivos**, y **Actividad reciente** te dice qué ha entrado y cuántas filas traía cada uno.
 
 ![Los partes de horas, importados solos](manual/carpeta-actividad.png)
 
@@ -632,4 +639,6 @@ este proyecto**; no se borra nada más.
 
 ---
 
-*KanriDO 1.1.0. Para avisar de un fallo o proponer una mejora, escribe a kanrido.contact@gmail.com.*
+*KanriDO 1.2.0. Para avisar de un fallo o proponer una mejora, pulsa **Ayuda** al pie de la barra
+lateral: prepara el mensaje en tu programa de correo y lo envías tú desde allí. También puedes
+escribir directamente a kanrido.contact@gmail.com.*

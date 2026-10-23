@@ -1,6 +1,6 @@
 # KanriDO privacy policy
 
-Last updated: October 14, 2026.
+Last updated: October 23, 2026.
 
 This is a courtesy translation of the Spanish original,
 [Política de privacidad de KanriDO](POLITICA_DE_PRIVACIDAD.md). If the two versions differ, the
@@ -11,8 +11,8 @@ Spanish version prevails.
 - **Controller**: César Calabuig Llamas.
 - **Contact**: kanrido.contact@gmail.com.
 
-This policy covers **the KanriDO download page** (github.com/pinnacle1010/kanrido) and contact by
-email. The application is covered separately, in section 2, because its situation is different.
+This policy covers **the KanriDO download page** (github.com/pinnacle1010/kanrido), **its Microsoft
+Store listing** and contact by email. The application is covered separately, in section 2, because its situation is different.
 
 ## 2. What the application sends
 
@@ -32,7 +32,8 @@ It does only two things on the internet:
 - **Check, when it starts, whether there is a new version**: it asks GitHub, where the versions are
   published, for the file that says which one is the latest. That request carries no business data
   and no identifier of the user; GitHub sees the IP address it comes from, as with any visit, and
-  handles it under its own policy. The new version is only downloaded if the user asks for it.
+  handles it under its own policy. The new version is only downloaded if the user asks for it. The
+  Microsoft Store version doesn't make this check: the Store itself updates it.
 
 Consequently, with regard to the data the user processes with the application, César Calabuig Llamas
 **is neither the controller nor the processor**, and never receives, hosts or has access to that
@@ -44,8 +45,9 @@ have set up. César Calabuig Llamas plays no part in this.
 
 ## 3. What César Calabuig Llamas processes
 
-There is no website of its own: the download page is a GitHub repository (section 4). César Calabuig
-Llamas processes only the following, and no other data:
+There is no website of its own: the download page is a GitHub repository and the Microsoft Store
+listing is hosted by Microsoft (section 4). César Calabuig Llamas processes only the following, and no
+other data:
 
 | Data | Purpose | Legal basis (GDPR art. 6) |
 |---|---|---|
@@ -62,14 +64,18 @@ César Calabuig Llamas has no control:
 https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement. The check
 for new versions in section 2 also reaches GitHub.
 
+The Microsoft Store version is downloaded and updated from the Store, which handles that data under
+the Microsoft privacy statement, over which César Calabuig Llamas has no control either:
+https://privacy.microsoft.com/en-us/privacystatement.
+
 ## 5. Recipients
 
 Data is not sold or transferred to third parties for commercial purposes.
 
 The providers involved are GitHub, which hosts the download and processes the metadata of each
-request under its own policy; Cloudflare, which hosts the service that counts installations and
-receives the IP address of the notice in section 2; and Google (Gmail), which serves the contact
-email.
+request under its own policy; Microsoft, which distributes the Microsoft Store version under its own;
+Cloudflare, which hosts the service that counts installations and receives the IP address of the
+notice in section 2; and Google (Gmail), which serves the contact email.
 
 ## 6. International transfers
 

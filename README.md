@@ -7,7 +7,7 @@
   </picture>
 </h1>
 
-Los indicadores de tu negocio, calculados a partir de los archivos que ya tienes.
+Las cifras de tu empresa en una sola pantalla.
 
 KanriDO es una aplicación de escritorio para Windows. Importa tus hojas de cálculo en el formato en
 que ya las llevas, calcula los indicadores y los muestra en un dashboard. Los datos se quedan
