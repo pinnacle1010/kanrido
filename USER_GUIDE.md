@@ -80,12 +80,12 @@ chose. One file is enough to see the first figures.
 
 ![The example view for those starting without data](user_guide/inicio-muestra.png)
 
-“Main” starts with KPIs from the areas you chose. The rest are in the [catalog](#45-the-catalog),
-and everything can be changed later.
+“Main” starts with KPIs from the areas you chose. The rest are added when you edit the dashboard
+(see [Choosing the KPIs](#43-choosing-the-kpis)), and everything can be changed later.
 
 **The tour.** When you reach the dashboard, a short tour shows you where everything is: the sections,
-the **Edit** button, the **+** to create another dashboard, the KPI list and the catalog. If you
-don't need it, click **Skip the tour**.
+the **Edit** button, the **+** to create another dashboard and, inside editing, all the KPIs and the
+button to create one. If you don't need it, click **Skip the tour**.
 
 ![The dashboard tour](user_guide/inicio-recorrido.png)
 
@@ -95,13 +95,23 @@ The sidebar on the left is the same on every screen:
 
 - **Back** takes you one step back, to the screen you were on.
 - **Dashboard**: your figures. It's the screen for day-to-day use.
-- **Data**: what comes in and how it's organized. Import, data history, KPIs, fields, projects and
-  backups are there.
-- **Settings**: the settings, which you normally change only once.
-- At the bottom are the **Period** selector (see [The period and “All”](#33-the-period-and-all)),
-  the **To do** tray (the clock with a number, which gathers what's waiting for a decision from you),
-  the **Help** button, to report a problem or suggest an improvement, and the button to switch
-  between the light and dark themes.
+- **Data**: how what comes in is organized. Data history, fields and projects are there.
+- **Settings**: the settings, which you normally change only once, and backups.
+- At the bottom are the **Import** button (see [Bringing in your data](#2-bringing-in-your-data)),
+  the **Period** selector (see [The period and “All”](#33-the-period-and-all)), the **To do** tray
+  (the clock with a number, which gathers what's waiting for a decision from you), the **Help**
+  button, to report a problem or suggest an improvement, and the button to switch between the light
+  and dark themes.
+
+**Panels.** The detail of a card, editing a dashboard, a project's record and Import open in a panel
+on the right, without leaving the screen you're on. While it's open, the sidebar folds away: at the
+top left you still have **Menu**, which brings it out without closing the panel, and **Back**. The
+panel closes with its **✕**, with Esc or with **Back**, and if you've typed something you haven't
+saved, it asks first.
+
+**Each screen's sentence.** The first time you open data history, fields, projects or Import, a
+sentence below the title tells you what the screen is for. Click **Got it** to hide it; the **ⓘ**
+next to the title shows it again.
 
 ### 1.4 Choosing where backups are saved
 
@@ -111,14 +121,15 @@ sidebar, reminds you until you choose one.
 
 ![The To do tray, with the backup folder reminder](user_guide/inicio-pendientes.png)
 
-1. Go to **Data › Backups**.
+1. Go to **Settings** and find the **Backups** box. From the **To do** tray, the reminder takes you
+   straight to it.
 2. Click **Choose folder…** and choose a folder on another drive, or a folder your cloud already
    syncs (OneDrive, Dropbox, Google Drive).
 
 With that whole folder and your local password you can recover your data on any other computer, from
 the first setup step.
 
-On the same screen, **Back up now** makes a backup right away, and **Restore** goes back to an
+In the same box, **Back up now** makes a backup right away, and **Restore** goes back to an
 earlier backup when the app restarts. The data you had until then is kept aside.
 
 ### 1.5 Updates
@@ -135,8 +146,9 @@ Nothing is downloaded or installed unless you ask, and your data is kept when yo
 
 ## 2. Bringing in your data
 
-Everything that goes into KanriDO goes through **Data › Import**. There are four ways to bring in
-your data:
+Everything that goes into KanriDO goes through the **Import** button, at the bottom of the sidebar.
+It opens in a panel over the screen you're on, so when it finishes you see its figures change behind
+it. There are four ways to bring in your data:
 
 - **Upload Excel/CSV**: you choose a file and import it right away.
 - **Manual entry**: you type a record by hand or paste a table copied from Excel or Google Sheets.
@@ -156,27 +168,33 @@ read as 1.5: check the figures after importing it.
 
 ### 2.1 Uploading a file
 
-1. Go to **Data › Import** and click **Upload Excel/CSV**.
+1. Click **Import** at the bottom of the sidebar and choose **Upload Excel/CSV**.
 2. Choose the file, or drag it onto the upload area.
-3. Check what KanriDO has recognized and click **Import**.
+3. Check what KanriDO has recognized and click **Import**, at the top right.
 
-**If the workbook has several sheets**, the ones you leave checked are imported. Those KanriDO
-doesn't recognize come unchecked, with the reason: if one has data you're interested in, check it
-anyway. Later you'll be able to remove one sheet without touching the others.
+While you check, the panel fills the whole window and, next to it, you see the file as it comes,
+with the row of column names highlighted.
 
-![An invoice workbook with one sheet per year and a notes sheet](user_guide/importar-hojas.png)
+**If the workbook has several sheets**, each one has its tab, and the ones you leave checked in
+**Import this sheet** are imported. Those KanriDO doesn't recognize come unchecked and grayed out,
+with the reason: if one has data you're interested in, check it anyway. Later you'll be able to
+remove one sheet without touching the others.
+
+![An invoice workbook with one tab per sheet: two years and a notes sheet](user_guide/importar-hojas.png)
 
 **If there's a title above the column names**, such as “Invoice register 2025”, KanriDO takes the
 names from the next row and tells you so in orange. If it isn't the right row, choose another in
 **Row with the column names**.
 
-**Which column is each piece of data.** Click **See the columns** to see how it understood each
-column of your file. On the left is the name the file has; on the right, under **Saved as**, the
-KanriDO field where it's saved. The ones it recognized on its own carry the **automatic** mark.
+**Which column is each piece of data.** In each sheet's tab, on the left is the name the file has;
+on the right, under **Saved as**, the KanriDO field where it's saved. The ones it recognized on its
+own carry the **automatic** mark. When you hover over one, its column is highlighted in the view of
+the file.
 
 ![The columns of a sheet, with the row of names chosen](user_guide/importar-columnas.png)
 
-- If a column isn't right, choose another field in the drop-down.
+- If a column isn't right, choose another field in the drop-down. What you assign by hand in one
+  sheet is suggested in the other sheets that have the same column.
 - If you're not interested in a column, leave it on **(ignore)**. If you need it later, you can
   assign it from [data history](#24-data-history) without uploading the file again.
 - If a column holds data KanriDO doesn't know yet, click **Create new field** and it's created with
@@ -197,7 +215,7 @@ version replaces the old one and the two aren't added together.
 
 ### 2.2 The import result
 
-When it finishes, KanriDO tells you how many records came in and which periods they go to, and warns
+When it finishes, the panel goes back to its width and tells you how many records came in and which periods they go to, and warns
 you about what's worth checking:
 
 - **Records with missing data**: records missing a piece of data, a date for example. Fix it by
@@ -220,7 +238,7 @@ projects' status. That's explained in [Projects](#52-tracking-statuses).
 If your data arrives every month in new files (timesheets, exports from your invoicing program), you
 can ask KanriDO to watch the folder where you keep them. Whatever shows up there comes in on its own.
 
-1. Go to **Data › Import** and click **Watch a folder**.
+1. Click **Import** at the bottom of the sidebar and choose **Watch a folder**.
 2. Click **Choose folder…** and choose the folder.
 
 What's already inside and whatever arrives comes in while the app is open; if you don't want to wait,
@@ -232,8 +250,9 @@ stays under **Pending**, with its notice also in the **To do** tray at the botto
 
 ![Twenty-one months of timesheets, waiting for confirmation](user_guide/carpeta-pendientes.png)
 
-Click **Import** on one of them, check its columns as in a normal upload and click **Import** with
-the **Save the mapping for future imports** box checked. In the example, the “Comments” column stays
+Click **Import** on one of them (or the file in the **To do** tray, from any screen), check its
+columns as in a normal upload and click **Import** with the **Save the mapping for future imports**
+box checked. In the example, the “Comments” column stays
 on **(ignore)**: that's a decision too, and it's remembered.
 
 ![Confirming the first timesheet](user_guide/carpeta-confirmar.png)
@@ -268,14 +287,17 @@ deletion, with its date, where it came from and how many records it moved.
 
 From here you can:
 
-- **See the records** of an import, filter them and remove the ones you don't need, or remove the
-  whole import. The figures are recalculated in a few seconds.
-- **Change the assigned columns** of an import, if you assigned one wrong when importing it, without
-  uploading the file again.
-- Choose the **project for the document** of an import.
+- **See the records** of an import: they open in a panel on the right, and while it's open you just
+  click another import to see its records. There you can filter them and remove the ones you don't
+  need, or remove the whole import. The figures are recalculated in a few seconds.
+- **Change the assigned columns** of an import, from its records, if you assigned one wrong when
+  importing it, without uploading the file again. In the same place you choose the **project for the
+  document**.
 - Review the records KanriDO has flagged because they **may be repeated** (they match others you
   already had in project, date and amount): you decide whether to keep both or discard the new ones.
 - **Export to CSV** the whole history.
+
+![The records of an import, in the panel on the right](user_guide/historial-carga.png)
 
 ---
 
@@ -334,7 +356,7 @@ at:
 - **A fiscal year** (2026, 2025…): each card shows the most recent figure in that fiscal year, and
   the charts show only that fiscal year.
 
-Two settings in **Settings › Calendar** change this behavior:
+Two settings in the **Calendar** box, in **Settings**, change this behavior:
 
 - **Fiscal year start month**: if your fiscal year doesn't start in January, set it here. Every
   KPI's quarters and years are counted from that month.
@@ -357,8 +379,8 @@ Each KPI can be viewed in five ways:
 
 The view is chosen in **Visualization**, when editing the KPI (see
 [Creating or changing a KPI](#44-creating-or-changing-a-kpi)), and with **Automatic** KanriDO
-chooses it. KPIs from the catalog already come with a view chosen, which you can change just the
-same.
+chooses it. The KPIs that come with KanriDO already have a view chosen, which you can change just
+the same.
 
 **If the view you want doesn't appear.** Only the views that fit the KPI are offered, and below the
 drop-down it says what to change to get the others:
@@ -375,7 +397,8 @@ isn't a problem, and in the other periods the chosen view comes back.
 
 ### 3.5 A KPI's detail
 
-When you click a card its detail opens, with:
+When you click a card, its detail opens in a panel on the right, with the dashboard next to it:
+click another card to see its detail without closing the panel. The detail shows:
 
 - **The figure** for the period and its change.
 - **The trend chart**, with every year even if you've chosen one. The **In progress** stretch is
@@ -406,6 +429,10 @@ fixed value or the average of several periods, as an absolute value or a percent
 editing the KPI, in **Comparison**. Snapshot KPIs and those that split into groups don't have a
 comparison.
 
+From the detail, **Edit** opens the KPI in the same panel (see
+[Creating or changing a KPI](#44-creating-or-changing-a-kpi)); when you save or cancel, you're back
+in the detail.
+
 **Manual KPIs.** If a KPI is manual (a figure that doesn't come from any file), its detail has a
 table to type the value for each period, or to **paste** several at once.
 
@@ -415,18 +442,18 @@ table to type the value for each period, or to **paste** several at once.
 
 Three ideas to find your way:
 
-- A **KPI** is a figure KanriDO calculates from your data, like “Revenue by period”. The full list is
-  in **Data › KPIs**.
+- A **KPI** is a figure KanriDO calculates from your data, like “Revenue by period”. They're all
+  there when you edit any dashboard.
 - A **dataset** is a group of KPIs, like “Accounting”. On the dashboard, each dataset is a section.
   A KPI can be in several datasets, or in none.
 - A **dashboard** is a tab with the KPIs you choose. You can have several.
 
 Reorganizing dashboards or datasets **never changes a figure**, and removing a KPI from a dashboard
-doesn't delete it: it stays in the KPI list and on the other dashboards that have it.
+doesn't delete it: it's still calculated and stays on the other dashboards that have it.
 
 If a dashboard shows a KPI without the dataset it belongs to, the card appears at the end, under
-**Other KPIs**. Its figure is just as correct. To place it in a section, assign it a dataset in
-**Data › KPIs** or add its dataset to the dashboard when editing it.
+**Other KPIs**. Its figure is just as correct. To place it in a section, edit the KPI and check a
+dataset for it, or add its dataset to the dashboard when editing it.
 
 ### 4.1 Several dashboards in tabs
 
@@ -434,18 +461,23 @@ The tabs are above the dashboard. The one you have open is remembered for next t
 
 - **Create a dashboard**: click **+** at the end of the tabs. The new dashboard starts empty and
   opens in edit mode.
-- **Change a dashboard**: open it and click **Edit**. When you're done, click **Done**.
+- **Change a dashboard**: open it and click **Edit**. Editing opens in a panel on the right, and each
+  change shows right away on the dashboard, on the left. When you're done, click **Done**.
 
 In edit mode you can:
 
 - Change its **name** (and click **Save**) and the tab's **color**.
 - Move it left or right with the arrows.
-- Choose **which KPIs it shows**. Checking a dataset adds it as a section with all its active KPIs;
-  with the arrow next to its name you expand it and check or uncheck each one. The **Field** filter
-  and the search box help you find a particular KPI.
+- Choose **which KPIs it shows** (see [Choosing the KPIs](#43-choosing-the-kpis)).
 - Collapse, hide and sort the sections.
-- **Delete this dashboard**. Its KPIs aren't deleted. The last dashboard can't be deleted: if you
-  want to start from scratch, rename it and remove its KPIs.
+- In **Datasets**, below the KPIs, create, rename, sort and delete datasets. A new dataset starts
+  empty: to add a KPI to it, edit that KPI and check the dataset.
+- **Delete this dashboard**. Its KPIs aren't deleted. It asks you first, because it can't be undone.
+  The last dashboard can't be deleted: if you want to start from scratch, rename it and remove its
+  KPIs.
+
+**Undo**, at the top of the panel, reverts the changes one at a time, from the last to the first,
+and says which one it will undo. It works while editing is open.
 
 ![Editing a dashboard: name, color, source of the figures and KPIs](user_guide/dashboard-editar.png)
 
@@ -464,31 +496,38 @@ that same list.
 If you just want to take a look at a project, you don't need to create a dashboard: open it from the
 project list (see [A project's screen](#56-a-projects-screen)).
 
-### 4.3 The KPI list
+### 4.3 Choosing the KPIs
 
-**Data › KPIs** holds everything KanriDO can measure in your installation.
+When you edit a dashboard, **KPIs in…** holds every KPI KanriDO can calculate, grouped by dataset and
+shown as sample cards. Expand a dataset with the arrow next to its name to see them.
 
-![The KPI list](user_guide/indicadores-lista.png)
+![The KPIs while editing the dashboard, searching for “collect”: the ones with no figures show example ones and what they're missing](user_guide/dashboard-galeria.png)
 
-- **The checkbox** for each KPI says whether it's **active**: whether it's calculated. Only active
-  KPIs can be shown on a dashboard. Turning one on doesn't add it to any dashboard: you check it
-  afterward when editing the dashboard.
-- To its right, the **datasets** it's in, and **how it's obtained**: guided, formula or manual.
-- **Edit** opens the KPI to change it.
-- The datasets drop-down and the search box filter the list.
-- In **Datasets**, at the top, datasets are created, renamed, sorted and deleted. A new dataset
-  starts empty: to add a KPI to it, edit that KPI and check the dataset.
+- Each card shows its figures if it already has them. If not, it shows example figures marked
+  **Example**, so you can see how it will look.
+- **Missing: …** tells you which data you'd need to import for that card to have figures.
+- **Add** puts the card at the end of its section on the dashboard, and **Remove** takes it off.
+  Checking a dataset's box adds all of it.
+- The ones marked **Calculation piece** feed a formula: they're not usually shown on their own.
+- The **Field** filter and the search box help you find a particular KPI.
+
+If you add a card that wasn't being calculated, KanriDO starts calculating it. Removing it from a
+dashboard doesn't stop calculating it: if you don't want it on any, edit it and uncheck **Calculate
+this KPI**.
 
 ### 4.4 Creating or changing a KPI
 
-Click **+ New KPI**, or **Edit** on one that already exists. The form is filled in from top to
-bottom, and on the right you have the **Preview** of the figure and **How it's calculated** in one
-sentence, which update as you fill it in.
+While editing the dashboard, click **+ New KPI**, or **Edit** on a card. You can also click **Edit**
+in a KPI's detail. The KPI opens in the same panel, with **Save** and **Cancel** at the top. The form
+is filled in from top to bottom, and next to it you have the **Preview** of the card and **How it's
+calculated** in one sentence, which update as you fill it in. If there's no data to calculate it
+yet, the preview shows example figures marked **Example**.
 
 ![Editing a guided KPI](user_guide/constructor-editar.png)
 
 - **Name**, the **Datasets** it's in and **Unit** ($, %, h…). If you leave it empty, it takes the
   unit of the field it adds up.
+- **Calculate this KPI**: uncheck it to stop calculating it on every dashboard.
 - **Periodicity**: **Monthly**, **Quarterly**, **Annual** or **Snapshot** (a figure for the moment,
   with no trend).
 - **Visualization**: the card's view (see [3.4](#34-ways-to-view-a-kpi)).
@@ -508,23 +547,8 @@ sentence, which update as you fill it in.
 - **Comparison** and **Show on the card**: what the figure is compared with and whether the change
   shows on the card.
 
-Click **Save**. KanriDO won't save a formula that depends on itself or on a KPI that doesn't exist.
-
-### 4.5 The catalog
-
-The **Catalog** (the **Catalog** button in the KPI list) gathers everything KanriDO can measure, in
-packs by area: Accounting, Sales, Projects, Operations and Management.
-
-![The catalog, with the packs sorted by what your data can already calculate](user_guide/catalogo.png)
-
-- Each pack says **how many of its KPIs can already be calculated** with your data.
-- When you expand a pack you see its KPIs. The ones that are off are turned on with **Turn on**.
-- **Fields missing** tells you which data would be worth bringing in to feed the rest: it's the place
-  to look for which files you should import.
-- The search box at the top finds a KPI or a pack by its name.
-
-Every KPI in the catalog is already in your KPI list: turning it on here or there is the same.
-Turning one on doesn't add it to any dashboard.
+Click **Save**. KanriDO won't save a formula that depends on itself or on a KPI that doesn't exist. A
+KPI you create while editing a dashboard goes onto that dashboard.
 
 ---
 
@@ -555,16 +579,19 @@ Your tracking sheet writes the projects' status in your own words: “Ongoing”
 - **Discarded**: lost or abandoned.
 
 The first time you import the tracking sheet, KanriDO asks you to map each word to one of the four
-statuses, in the **Tracking statuses** tab. The mapping is remembered for future imports. While a
-word is unmapped, its projects have no status and don't count as active.
+statuses. Above the project list there's a notice with **Map**, which opens the project settings on
+**Tracking statuses**. The mapping is remembered for future imports. While a word is unmapped, its
+projects have no status and don't count as active.
 
 ![Mapping the status words](user_guide/proyectos-estados.png)
 
 ### 5.3 Completing a project
 
 If something about a project isn't in your tracking sheet, you can complete it by hand: click
-**Complete** next to its name. You can give it a display name, a status, a type, its business lines,
-its dates and whether it has public funding.
+**Complete** next to its name. Its record opens in a panel on the right, with **Save** and **Cancel**
+at the top. You can give it a display name, a status, a type, its business lines, its dates and
+whether it has public funding. With the record open, click another project in the list to move to
+its record.
 
 ![Completing a project that isn't in the tracking sheet](user_guide/proyectos-completar.png)
 
@@ -576,7 +603,8 @@ The project code can't be changed. If the same project appears with two codes, m
 
 ### 5.4 Business lines and project types
 
-They're two ways of grouping your projects, and each one has its tab in **Data › Projects**:
+They're two ways of grouping your projects, and each one has its tab in the project settings
+(**Open project settings**, next to the title of **Data › Projects**):
 
 - **Business lines**: the divisions the activity is split into, like Architecture or Engineering. A
   project can be in several at once.
@@ -618,7 +646,8 @@ and in its figures. Your files and your records aren't touched.
 If a code isn't a real project, click **⋮ › Remove from the list**. Its records still count in the
 whole company's figures, but they no longer count as a project.
 
-Both can be undone in the **Merged and removed** tab, with **Separate** or **Put back on the list**.
+Both can be undone in the project settings, in the **Merged and removed** tab, with **Separate** or
+**Put back on the list**.
 
 ### 5.6 A project's screen
 
@@ -637,6 +666,6 @@ project**; nothing else is deleted.
 
 ---
 
-*KanriDO 1.2.0. To report a problem or suggest an improvement, click **Help** at the bottom of the
+*KanriDO 1.3.0. To report a problem or suggest an improvement, click **Help** at the bottom of the
 sidebar: it prepares the message in your email app, and you send it from there. You can also write
 directly to kanrido.contact@gmail.com.*

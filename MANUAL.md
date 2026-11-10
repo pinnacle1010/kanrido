@@ -78,12 +78,12 @@ que has elegido. Con uno basta para ver las primeras cifras.
 
 ![La vista de ejemplo para quien empieza sin datos](manual/inicio-muestra.png)
 
-«Principal» empieza con indicadores de las áreas elegidas. Los demás están en el
-[catálogo](#45-el-catálogo), y todo se puede cambiar después.
+«Principal» empieza con indicadores de las áreas elegidas. Los demás se añaden al editar el
+dashboard (ver [Elegir los indicadores](#43-elegir-los-indicadores)), y todo se puede cambiar después.
 
 **El recorrido.** Al llegar al dashboard, un recorrido corto te enseña dónde está cada cosa: las
-secciones, el botón **Editar**, el **+** para crear otro dashboard, la lista de indicadores y el
-catálogo. Si no lo necesitas, pulsa **Saltar el recorrido**.
+secciones, el botón **Editar**, el **+** para crear otro dashboard y, dentro de la edición, todos los
+indicadores y el botón para crear uno. Si no lo necesitas, pulsa **Saltar el recorrido**.
 
 ![El recorrido por el dashboard](manual/inicio-recorrido.png)
 
@@ -93,13 +93,23 @@ La barra lateral de la izquierda es la misma en todas las pantallas:
 
 - **Volver** te lleva un paso atrás, a la pantalla en la que estabas.
 - **Dashboard**: tus cifras. Es la pantalla del día a día.
-- **Datos**: lo que entra y cómo se organiza. Ahí están importar, el historial de datos, los
-  indicadores, los campos, los proyectos y las copias de seguridad.
-- **Configuración**: los ajustes, que normalmente se tocan una sola vez.
-- Al pie están el selector de **Periodo** (ver [El periodo y «Todo»](#33-el-periodo-y-todo)), la
-  bandeja de **pendientes** —el reloj con un número, que reúne lo que espera una decisión tuya—, el
-  botón **Ayuda**, para avisar de un fallo o proponer una mejora, y el botón para cambiar entre el
-  tema claro y el oscuro.
+- **Datos**: cómo se organiza lo que entra. Ahí están el historial de datos, los campos y los
+  proyectos.
+- **Configuración**: los ajustes, que normalmente se tocan una sola vez, y las copias de seguridad.
+- Al pie están el botón **Importar** (ver [Traer los datos](#2-traer-los-datos)), el selector de
+  **Periodo** (ver [El periodo y «Todo»](#33-el-periodo-y-todo)), la bandeja de **pendientes** —el
+  reloj con un número, que reúne lo que espera una decisión tuya—, el botón **Ayuda**, para avisar de
+  un fallo o proponer una mejora, y el botón para cambiar entre el tema claro y el oscuro.
+
+**Los paneles.** El detalle de una tarjeta, la edición de un dashboard, la ficha de un proyecto e
+Importar se abren en un panel por la derecha, sin salir de la pantalla en la que estás. Mientras
+está abierto, la barra lateral se recoge: arriba a la izquierda quedan **Menú**, que la saca sin
+cerrar el panel, y **Volver**. El panel se cierra con su **✕**, con Esc o con **Volver**, y si has
+escrito algo sin guardar te pregunta antes.
+
+**La frase de cada pantalla.** La primera vez que abres el historial de datos, los campos, los
+proyectos o Importar, debajo del título hay una frase que dice para qué sirve. Pulsa **Entendido**
+para ocultarla; el **ⓘ** junto al título la vuelve a enseñar.
 
 ### 1.4 Elegir dónde se guardan las copias de seguridad
 
@@ -109,14 +119,15 @@ de la barra, te lo recuerda hasta que la eliges.
 
 ![La bandeja de pendientes, con el recordatorio de la carpeta de copias](manual/inicio-pendientes.png)
 
-1. Entra en **Datos › Copias de seguridad**.
+1. Entra en **Configuración** y busca el cuadro **Copias de seguridad**. Desde la bandeja de
+   pendientes, el recordatorio te lleva directamente a él.
 2. Pulsa **Elegir carpeta…** y elige una carpeta en otro disco, o una carpeta que ya sincronice tu
    nube (OneDrive, Dropbox, Google Drive).
 
 Con esa carpeta entera y tu contraseña local puedes recuperar tus datos en cualquier otro equipo,
 desde el primer paso del asistente.
 
-En la misma pantalla, **Copia ahora** hace una copia en el momento, y **Restaurar** vuelve a una copia
+En el mismo cuadro, **Copia ahora** hace una copia en el momento, y **Restaurar** vuelve a una copia
 anterior al reiniciar la aplicación. Los datos que tenías hasta entonces se guardan aparte.
 
 ### 1.5 Las actualizaciones
@@ -133,7 +144,9 @@ Nada se descarga ni se instala sin que lo pidas, y tus datos se conservan al act
 
 ## 2. Traer los datos
 
-Todo lo que entra en KanriDO pasa por **Datos › Importar**. Hay cuatro formas de aportar los datos:
+Todo lo que entra en KanriDO pasa por el botón **Importar**, al pie de la barra lateral. Se abre en
+un panel encima de la pantalla en la que estés, así que al terminar ves cambiar sus cifras detrás.
+Hay cuatro formas de aportar los datos:
 
 - **Subir Excel/CSV**: eliges un archivo y lo importas en el momento.
 - **Entrada manual**: escribes un registro a mano o pegas una tabla copiada de Excel o de Google Sheets.
@@ -148,27 +161,33 @@ y las fechas como «25/12/2025» se entienden tal y como los escribes.
 
 ### 2.1 Subir un archivo
 
-1. Entra en **Datos › Importar** y pulsa **Subir Excel/CSV**.
+1. Pulsa **Importar** al pie de la barra y elige **Subir Excel/CSV**.
 2. Elige el archivo, o arrástralo a la zona de subida.
-3. Revisa lo que KanriDO ha reconocido y pulsa **Importar**.
+3. Revisa lo que KanriDO ha reconocido y pulsa **Importar**, arriba a la derecha.
 
-**Si el libro tiene varias hojas**, se importan las que dejes marcadas. Las que KanriDO no reconoce
-vienen desmarcadas, con el motivo: si una trae datos que te interesan, márcala igualmente. Después
-podrás quitar una hoja sin tocar las otras.
+Mientras revisas, el panel ocupa toda la ventana y, al lado, ves el archivo tal como viene, con la
+fila de los nombres de columna marcada.
 
-![Un libro de facturas con una hoja por año y una hoja de notas](manual/importar-hojas.png)
+**Si el libro tiene varias hojas**, cada una tiene su pestaña, y se importan las que dejes marcadas
+en **Importar esta hoja**. Las que KanriDO no reconoce vienen desmarcadas y en gris, con el motivo:
+si una trae datos que te interesan, márcala igualmente. Después podrás quitar una hoja sin tocar las
+otras.
+
+![Un libro de facturas con una pestaña por hoja: dos años y una hoja de notas](manual/importar-hojas.png)
 
 **Si encima de los nombres de columna hay un título**, como «Registro de facturas emitidas 2025»,
 KanriDO toma los nombres de la fila siguiente y te lo dice en naranja. Si no es la fila buena, elige
 otra en **Fila con los nombres de columna**.
 
-**Qué columna es cada dato.** Pulsa **Ver las columnas** para ver cómo ha entendido cada columna de
-tu archivo. A la izquierda está el nombre que trae el archivo; a la derecha, en **Se guarda como**, el
-campo de KanriDO donde se guarda. Las que ha reconocido solas llevan la marca **automático**.
+**Qué columna es cada dato.** En la pestaña de cada hoja, a la izquierda está el nombre que trae el
+archivo; a la derecha, en **Se guarda como**, el campo de KanriDO donde se guarda. Las que ha
+reconocido solas llevan la marca **automático**. Al pasar el ratón por una, su columna se resalta en
+la vista del archivo.
 
 ![La tabla de columnas de una hoja, con la fila de los nombres elegida](manual/importar-columnas.png)
 
-- Si una columna no está bien, elige otro campo en el desplegable.
+- Si una columna no está bien, elige otro campo en el desplegable. Lo que asignes a mano en una hoja
+  se propone en las demás hojas que traen la misma columna.
 - Si una columna no te interesa, déjala en **(ignorar)**. Si más adelante la necesitas, podrás
   asignarla desde el [historial de datos](#24-el-historial-de-datos) sin volver a subir el archivo.
 - Si una columna trae un dato que KanriDO todavía no conoce, pulsa **Crear campo nuevo** y se crea
@@ -189,7 +208,7 @@ cuál, la versión nueva sustituye a la anterior y no se suman las dos.
 
 ### 2.2 El resultado de la importación
 
-Al terminar, KanriDO te dice cuántos registros han entrado y a qué periodos van, y te avisa de lo que
+Al terminar, el panel vuelve a su ancho y te dice cuántos registros han entrado y a qué periodos van, y te avisa de lo que
 conviene revisar:
 
 - **Registros con datos faltantes**: registros a los que les falta un dato, por ejemplo una fecha. Se
@@ -214,7 +233,7 @@ Si tus datos llegan cada mes en archivos nuevos —partes de horas, exportacione
 facturación—, puedes pedirle a KanriDO que vigile la carpeta donde los guardas. Lo que aparezca ahí
 entra solo.
 
-1. Entra en **Datos › Importar** y pulsa **Vigilar carpeta**.
+1. Pulsa **Importar** al pie de la barra y elige **Vigilar carpeta**.
 2. Pulsa **Elegir carpeta…** y elige la carpeta.
 
 Lo que ya hay dentro y lo que vaya llegando entra mientras la aplicación está abierta; si no quieres
@@ -227,8 +246,8 @@ lateral.
 
 ![Los partes de horas de 21 meses, esperando confirmación](manual/carpeta-pendientes.png)
 
-Pulsa **Importar** en uno de ellos, revisa sus columnas como en una subida normal y pulsa
-**Importar** con la casilla **Guardar el mapeo para futuras importaciones** marcada. En el ejemplo, la
+Pulsa **Importar** en uno de ellos —o el archivo en la bandeja de pendientes, desde cualquier
+pantalla—, revisa sus columnas como en una subida normal y pulsa **Importar** con la casilla **Guardar el mapeo para futuras importaciones** marcada. En el ejemplo, la
 columna «Observaciones» queda en **(ignorar)**: también es una decisión, y se recuerda.
 
 ![La confirmación del primer parte de horas](manual/carpeta-confirmar.png)
@@ -264,15 +283,17 @@ cada borrado, con su fecha, de dónde vino y cuántos registros movió.
 
 Desde aquí puedes:
 
-- **Ver los registros** de una carga, filtrarlos y quitar los que sobren, o quitar la carga entera. Las
-  cifras se recalculan en unos segundos.
-- **Cambiar las columnas asignadas** de una carga, si al importarla asignaste mal alguna, sin volver
-  a subir el archivo.
-- Elegir el **proyecto del documento** de una carga.
+- **Ver los registros** de una carga: se abren en un panel a la derecha, y con él abierto basta con
+  pulsar otra carga para ver la suya. Ahí puedes filtrarlos y quitar los que sobren, o quitar la carga
+  entera. Las cifras se recalculan en unos segundos.
+- **Cambiar las columnas asignadas** de una carga, desde sus registros, si al importarla asignaste
+  mal alguna, sin volver a subir el archivo. En el mismo sitio eliges el **proyecto del documento**.
 - Revisar los registros que KanriDO ha señalado porque **pueden estar repetidos** (coinciden en
   proyecto, fecha e importe con otros que ya tenías): decides tú si te quedas con los dos o descartas
   los nuevos.
 - **Exportar a CSV** el historial entero.
+
+![Los registros de una carga, en el panel de la derecha](manual/historial-carga.png)
 
 ---
 
@@ -331,7 +352,7 @@ El selector **Periodo**, al pie de la barra lateral, decide qué periodo miran t
 - **Un ejercicio** (2026, 2025…): cada tarjeta enseña la cifra más reciente de ese ejercicio, y los
   gráficos solo ese ejercicio.
 
-Dos ajustes de **Configuración › Calendario** cambian este comportamiento:
+Dos ajustes del cuadro **Calendario**, en **Configuración**, cambian este comportamiento:
 
 - **Mes de inicio del ejercicio**: si tu ejercicio fiscal no empieza en enero, indícalo aquí. Los
   trimestres y los años de todos los indicadores se cuentan desde ese mes.
@@ -355,7 +376,7 @@ Cada indicador se puede ver de cinco formas:
 
 La forma se elige en **Visualización**, al editar el indicador (ver
 [Crear o cambiar un indicador](#44-crear-o-cambiar-un-indicador)), y con **Automático** la elige
-KanriDO. Los indicadores del catálogo llegan ya con una forma elegida, que puedes cambiar igual.
+KanriDO. Los indicadores que trae KanriDO llegan ya con una forma elegida, que puedes cambiar igual.
 
 **Si no aparece la forma que buscas.** Solo se ofrecen las que encajan con el indicador, y debajo del
 desplegable se dice qué cambiar para tener las demás:
@@ -373,7 +394,8 @@ No es un fallo, y en los demás periodos vuelve la forma elegida.
 
 ### 3.5 El detalle de un indicador
 
-Al pulsar una tarjeta se abre su detalle, con:
+Al pulsar una tarjeta, su detalle se abre en un panel a la derecha, con el dashboard al lado: pulsa
+otra tarjeta para ver la suya sin cerrarlo. El detalle enseña:
 
 - **La cifra** del periodo y su variación.
 - **El gráfico de evolución**, con todos los años aunque hayas elegido uno. El tramo **En curso** se
@@ -404,6 +426,10 @@ año anterior, con un valor fijo o con la media de varios periodos, en valor abs
 porcentaje. Se elige al editar el indicador, en **Comparativa**. Los indicadores de estado actual y
 los que reparten en grupos no llevan comparativa.
 
+Desde el detalle, **Editar** abre el indicador en el mismo panel (ver
+[Crear o cambiar un indicador](#44-crear-o-cambiar-un-indicador)); al guardar o cancelar vuelves al
+detalle.
+
 **Indicadores manuales.** Si un indicador es manual (una cifra que no sale de ningún archivo), su
 detalle tiene una tabla para escribir el valor de cada periodo, o para **pegar** varios de una vez.
 
@@ -414,17 +440,17 @@ detalle tiene una tabla para escribir el valor de cada periodo, o para **pegar**
 Tres ideas para orientarse:
 
 - Un **indicador** es una cifra que KanriDO calcula a partir de tus datos, como «Facturación por
-  periodo». La lista completa está en **Datos › Indicadores**.
+  periodo». Están todos en la edición de cualquier dashboard.
 - Un **dataset** es un grupo de indicadores, como «Contabilidad». En el dashboard, cada dataset es una
   sección. Un indicador puede estar en varios datasets, o en ninguno.
 - Un **dashboard** es una pestaña con los indicadores que tú elijas. Puedes tener varios.
 
 Reorganizar dashboards o datasets **nunca cambia una cifra**, y quitar un indicador de un dashboard no
-lo borra: sigue en la lista de indicadores y en los demás dashboards que lo lleven.
+lo borra: se sigue calculando y sigue en los demás dashboards que lo lleven.
 
 Si un dashboard enseña un indicador sin el dataset en el que va, la tarjeta aparece al final, en
-**Otros indicadores**. Su cifra es igual de correcta. Para colocarla en una sección, asígnale un
-dataset en **Datos › Indicadores** o añade su dataset al dashboard al editarlo.
+**Otros indicadores**. Su cifra es igual de correcta. Para colocarla en una sección, edita el
+indicador y márcale un dataset, o añade su dataset al dashboard al editarlo.
 
 ### 4.1 Varios dashboards en pestañas
 
@@ -432,18 +458,23 @@ Las pestañas están encima del dashboard. La que tengas abierta se recuerda par
 
 - **Crear un dashboard**: pulsa **+** al final de las pestañas. El dashboard nuevo nace vacío y se
   abre en modo edición.
-- **Cambiar un dashboard**: ábrelo y pulsa **Editar**. Cuando acabes, pulsa **Hecho**.
+- **Cambiar un dashboard**: ábrelo y pulsa **Editar**. La edición se abre en un panel a la derecha y
+  cada cambio se ve en el momento en el dashboard, a la izquierda. Cuando acabes, pulsa **Hecho**.
 
 En modo edición puedes:
 
 - Cambiarle el **nombre** (y pulsar **Guardar**) y el **color** de la pestaña.
 - Moverlo a la izquierda o a la derecha con las flechas.
-- Elegir **qué indicadores enseña**. Marcar un dataset lo añade como sección con todos sus indicadores
-  activos; con la flecha de su nombre lo despliegas y marcas o quitas cada uno. El filtro
-  **Campo** y el buscador te ayudan a encontrar un indicador concreto.
+- Elegir **qué indicadores enseña** (ver [Elegir los indicadores](#43-elegir-los-indicadores)).
 - Plegar, ocultar y ordenar las secciones.
-- **Borrar este dashboard**. Sus indicadores no se borran. El último dashboard no se puede borrar: si
-  quieres empezar de cero, cámbiale el nombre y quítale los indicadores.
+- En **Datasets**, debajo de los indicadores, crear, renombrar, ordenar y borrar los datasets. Un
+  dataset nuevo nace vacío: para añadirle un indicador, edita ese indicador y marca el dataset.
+- **Borrar este dashboard**. Sus indicadores no se borran. Te pregunta antes, porque no se puede
+  deshacer. El último dashboard no se puede borrar: si quieres empezar de cero, cámbiale el nombre y
+  quítale los indicadores.
+
+**Deshacer**, arriba en el panel, devuelve los cambios de uno en uno, del último al primero, y dice
+cuál va a deshacer. Funciona mientras la edición está abierta.
 
 ![La edición de un dashboard: nombre, color, origen de las cifras e indicadores](manual/dashboard-editar.png)
 
@@ -462,31 +493,39 @@ empresa** en esa misma lista.
 Si solo quieres echar un vistazo a un proyecto, no hace falta crear un dashboard: ábrelo desde su
 lista (ver [La pantalla de un proyecto](#56-la-pantalla-de-un-proyecto)).
 
-### 4.3 La lista de indicadores
+### 4.3 Elegir los indicadores
 
-En **Datos › Indicadores** está todo lo que KanriDO sabe medir en tu instalación.
+Al editar un dashboard, en **Indicadores de…** están todos los indicadores que KanriDO sabe calcular,
+agrupados por dataset y enseñados como tarjetas de muestra. Despliega un dataset con la flecha de su
+nombre para verlos.
 
-![La lista de indicadores](manual/indicadores-lista.png)
+![Los indicadores en la edición del dashboard, buscando «cobro»: los que no tienen cifras enseñan unas de ejemplo y lo que les falta](manual/dashboard-galeria.png)
 
-- **La casilla** de cada indicador dice si está **activo**: si se calcula. Solo los activos se pueden
-  enseñar en un dashboard. Activar uno no lo añade a ningún dashboard: se marca después al editar el
-  dashboard.
-- A su derecha, los **datasets** en los que está, y **cómo se obtiene**: guiado, fórmula o manual.
-- **Editar** abre el indicador para cambiarlo.
-- El desplegable de datasets y el buscador filtran la lista.
-- En **Datasets**, arriba, se crean, renombran, ordenan y borran los datasets. Un dataset nuevo nace
-  vacío: para añadirle un indicador, edita ese indicador y marca el dataset.
+- Cada tarjeta enseña sus cifras si ya las tiene. Si no, enseña unas de ejemplo marcadas **Ejemplo**,
+  para que veas cómo quedará.
+- **Le falta: …** te dice qué dato tendrías que importar para que esa tarjeta tenga cifras.
+- **Añadir** lleva la tarjeta al final de su sección del dashboard, y **Quitar** la saca. Marcar la
+  casilla de un dataset lo añade entero.
+- Las marcadas **Pieza de cálculo** alimentan una fórmula: normalmente no se enseñan solas.
+- El filtro **Campo** y el buscador te ayudan a encontrar un indicador concreto.
+
+Si añades una tarjeta que no se calculaba, KanriDO empieza a calcularla. Quitarla de un dashboard no
+deja de calcularla: si no la quieres en ninguno, edítala y desmarca **Calcular este indicador**.
 
 ### 4.4 Crear o cambiar un indicador
 
-Pulsa **+ Nuevo indicador**, o **Editar** en uno que ya exista. El formulario se recorre de arriba
-abajo, y a la derecha tienes la **Previsualización** de la cifra y **Cómo se calcula** en una frase,
-que se actualizan mientras rellenas.
+En la edición del dashboard, pulsa **+ Nuevo indicador**, o **Editar** en una tarjeta. También puedes
+pulsar **Editar** en el detalle de un indicador. El indicador se abre en el mismo panel, con
+**Guardar** y **Cancelar** arriba. El formulario se recorre de arriba abajo, y a su lado tienes la
+**Previsualización** de la tarjeta y **Cómo se calcula** en una frase, que se actualizan mientras
+rellenas. Si todavía no hay datos para calcularlo, la previsualización enseña cifras de ejemplo
+marcadas **Ejemplo**.
 
 ![La edición de un indicador guiado](manual/constructor-editar.png)
 
 - **Nombre**, **Datasets** en los que está y **Unidad** (€, %, horas…). Si la dejas vacía, toma la del
   campo que suma.
+- **Calcular este indicador**: desmárcalo para que deje de calcularse en todos los dashboards.
 - **Periodicidad**: **Mensual**, **Trimestral**, **Anual** o **Estado actual** (una cifra del
   momento, sin evolución).
 - **Visualización**: la forma de la tarjeta (ver [3.4](#34-las-formas-de-ver-un-indicador)).
@@ -507,23 +546,7 @@ que se actualizan mientras rellenas.
   en la tarjeta.
 
 Pulsa **Guardar**. KanriDO no deja guardar una fórmula que dependa de sí misma o de un indicador que
-no existe.
-
-### 4.5 El catálogo
-
-El **Catálogo** (botón **Catálogo** en la lista de indicadores) reúne todo lo que KanriDO sabe medir,
-en paquetes por área: Contabilidad, Comercial, Proyectos, Operaciones y Dirección.
-
-![El catálogo, con los paquetes ordenados por lo que tus datos ya pueden calcular](manual/catalogo.png)
-
-- Cada paquete dice **cuántos de sus indicadores se pueden calcular ya** con tus datos.
-- Al desplegar un paquete ves sus indicadores. Los que están sin activar se activan con **Activar**.
-- **Faltan campos** te dice qué datos convendría traer para alimentar el resto: es el sitio donde
-  mirar qué archivos te conviene importar.
-- El buscador de arriba encuentra un indicador o un paquete por su nombre.
-
-Todos los indicadores del catálogo están ya en tu lista de indicadores: activarlos aquí o allí es lo
-mismo. Activar uno no lo añade a ningún dashboard.
+no existe. Un indicador que creas desde la edición de un dashboard entra en ese dashboard.
 
 ---
 
@@ -555,17 +578,18 @@ Tu hoja de seguimiento escribe el estado de los proyectos con tus propias palabr
 - **Descartado**: perdido o abandonado.
 
 La primera vez que importas el seguimiento, KanriDO te pide que traduzcas cada palabra a uno de los
-cuatro estados, en la pestaña **Estados del seguimiento**. La traducción se recuerda para las
-siguientes cargas. Mientras una palabra está sin traducir, sus proyectos salen sin estado y no
-cuentan como activos.
+cuatro estados. Encima de la lista de proyectos sale un aviso con **Traducir**, que abre los ajustes
+de proyectos en **Estados del seguimiento**. La traducción se recuerda para las siguientes cargas.
+Mientras una palabra está sin traducir, sus proyectos salen sin estado y no cuentan como activos.
 
 ![La traducción de las palabras de estado](manual/proyectos-estados.png)
 
 ### 5.3 Completar un proyecto
 
 Si algo de un proyecto no viene en tu seguimiento, puedes completarlo a mano: pulsa **Completar** junto
-a su nombre. Puedes darle un nombre visible, un estado, un tipo, sus líneas de negocio, sus fechas y si
-tiene financiación pública.
+a su nombre. Su ficha se abre en un panel a la derecha, con **Guardar** y **Cancelar** arriba. Puedes
+darle un nombre visible, un estado, un tipo, sus líneas de negocio, sus fechas y si tiene
+financiación pública. Con la ficha abierta, pulsa otro proyecto de la lista para pasar al suyo.
 
 ![Completar un proyecto que no viene en el seguimiento](manual/proyectos-completar.png)
 
@@ -577,7 +601,8 @@ El código del proyecto no se puede cambiar. Si un mismo proyecto aparece con do
 
 ### 5.4 Líneas de negocio y tipos de proyecto
 
-Son dos formas de agrupar tus proyectos, y cada una tiene su pestaña en **Datos › Proyectos**:
+Son dos formas de agrupar tus proyectos, y cada una tiene su pestaña en los ajustes de proyectos
+(**Abrir los ajustes de proyectos**, junto al título de **Datos › Proyectos**):
 
 - **Líneas de negocio**: las divisiones por las que se reparte la actividad, como Arquitectura o
   Ingeniería. Un proyecto puede estar en varias a la vez.
@@ -619,8 +644,8 @@ repartos y en sus cifras. Tus archivos y tus registros no se tocan.
 Si un código no es un proyecto de verdad, pulsa **⋮ › Quitar de la lista**. Sus registros siguen
 contando en las cifras de toda la empresa, pero dejan de contar como proyecto.
 
-Las dos cosas se deshacen en la pestaña **Unidos y quitados**, con **Separar** o **Volver a la
-lista**.
+Las dos cosas se deshacen en los ajustes de proyectos, en la pestaña **Unidos y quitados**, con
+**Separar** o **Volver a la lista**.
 
 ### 5.6 La pantalla de un proyecto
 
@@ -639,6 +664,6 @@ este proyecto**; no se borra nada más.
 
 ---
 
-*KanriDO 1.2.0. Para avisar de un fallo o proponer una mejora, pulsa **Ayuda** al pie de la barra
+*KanriDO 1.3.0. Para avisar de un fallo o proponer una mejora, pulsa **Ayuda** al pie de la barra
 lateral: prepara el mensaje en tu programa de correo y lo envías tú desde allí. También puedes
 escribir directamente a kanrido.contact@gmail.com.*

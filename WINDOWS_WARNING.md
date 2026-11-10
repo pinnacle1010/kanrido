@@ -28,7 +28,7 @@ published.
 To calculate it, open PowerShell in your Downloads folder and type:
 
 ```
-Get-FileHash -Algorithm SHA256 .\KanriDO_1.2.0_x64-setup.exe
+Get-FileHash -Algorithm SHA256 .\KanriDO_1.3.0_x64-setup.exe
 ```
 
 Replace the version number with the one in the file you downloaded. Compare the result with the
